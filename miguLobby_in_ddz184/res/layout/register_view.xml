@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_bg" >
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginTop="12dip"
+        android:background="@drawable/btn_goback" />
+
+    <RelativeLayout
+        android:layout_width="400dip"
+        android:layout_height="260dip"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/image_register_top_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/iv_register_top" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/text_register_top" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/image_register_bottom_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/image_account_psw_bottom" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/image_register_bottom_id"
+                android:layout_below="@id/image_register_top_id"
+                android:background="@drawable/account_psw_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="340dip"
+            android:layout_height="126.7dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dip"
+            android:background="@drawable/ll_account_psw2" />
+
+        <RelativeLayout
+            android:layout_width="340dip"
+            android:layout_height="126.7dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="42dip"
+                android:src="@drawable/ll_account_psw_line_2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="84dip"
+                android:src="@drawable/ll_account_psw_line_2" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="43.3dip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|left"
+                android:layout_marginLeft="23.3dip"
+                android:text="@string/login_registe_account_tip"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|left"
+                android:layout_marginLeft="23.3dip"
+                android:text="@string/login_registe_password_tip"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="338.7dip"
+                    android:layout_height="40.7dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120.7dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/account_str2"
+                        android:textColor="#063552"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/etAccount"
+                        android:layout_width="200dip"
+                        android:layout_height="40.7dip"
+                        android:background="#00000000"
+                        android:gravity="center_vertical"
+                        android:hint="@string/login_registe_account_hint"
+                        android:imeOptions="flagNoExtractUi|actionNext"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="338.7dip"
+                    android:layout_height="40.7dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120.7dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/psw_str2"
+                        android:textColor="#063552"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="200dip"
+                        android:layout_height="50dip"
+                        android:background="#00000000"
+                        android:hint="@string/psw_edit_hint"
+                        android:imeOptions="flagNoExtractUi|actionNext"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="338.7dip"
+                    android:layout_height="40.7dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120.7dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/confirm_psw_str"
+                        android:textColor="#063552"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/etPswConfirm"
+                        android:layout_width="200dip"
+                        android:layout_height="50dip"
+                        android:background="#00000000"
+                        android:hint="@string/confirm_psw_edit_hint"
+                        android:imeOptions="flagNoExtractUi|actionDone"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dip"
+            android:background="@drawable/btn_ensure_register" />
+    </RelativeLayout>
+
+</RelativeLayout>

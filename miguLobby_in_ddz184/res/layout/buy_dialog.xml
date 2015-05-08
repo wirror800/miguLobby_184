@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="420dp"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/buy_dialog_main"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/force_dialog_bg"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp" >
+
+        <TextView
+            android:id="@+id/system_pop_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/dialog_title_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="@string/prompt"
+            android:textColor="#903300"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/limit_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:padding="5dp"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+            android:id="@+id/relBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:id="@+id/prop_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/goods_icon"
+                android:contentDescription="@string/app_name" />
+
+            <RelativeLayout
+                android:id="@+id/propInfoLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/prop_img" >
+
+                <TextView
+                    android:id="@+id/prop_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textColor="#eca8ff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/prop_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/prop_name"
+                    android:textColor="@color/hilight_yellow"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/buy_bean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/prop_price"
+                    android:textColor="#fff4c1"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/firstIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/propInfoLayout"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/propInfoLayout"
+                android:src="@drawable/fast_buy_first_icon" />
+
+            <TextView
+                android:id="@+id/firtstDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/firstIcon"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/ddz_buy_first_buy_gift"
+                android:textColor="#eca8ff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvGotoMarket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/firstIcon"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/firstIcon"
+                android:text="@string/moregoods"
+                android:textColor="#c5fc8e"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/buy_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/dialog_divider"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/buy_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/system_pop_ll_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/dialogButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/btn_orange"
+                android:text="@string/Cancel"
+                android:textColor="@color/orange_btn_text_color" />
+
+            <Button
+                android:id="@+id/btnFastBuy"
+                style="@style/dialogButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_orange"
+                android:text="@string/Ensure"
+                android:textColor="@color/orange_btn_text_color" />
+        </LinearLayout>
+
+     
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@id/buy_dialog_main"
+        android:background="@drawable/login_gift_btn_cancel"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/ivFirstTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/fast_buy_first_title" />
+
+</RelativeLayout>

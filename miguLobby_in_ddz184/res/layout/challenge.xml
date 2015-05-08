@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_common"
+    android:orientation="vertical" >
+
+    <!-- title头部 -->
+
+    <include layout="@layout/common_title_layout" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/player_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vs"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/challengcreate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/bg_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/rel_basic"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/rel_id"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:drawableLeft="@drawable/challenge_point"
+                    android:gravity="center_vertical"
+                    android:text="@string/challenge_label_1"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_accout"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignLeft="@+id/rel_id"
+                android:layout_below="@+id/rel_id"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/light_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:drawableLeft="@drawable/challenge_point"
+                    android:gravity="center_vertical"
+                    android:text="@string/challenge_label_2"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_nick"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignLeft="@id/rel_id"
+                android:layout_below="@+id/rel_accout"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:drawableLeft="@drawable/challenge_point"
+                    android:gravity="center_vertical"
+                    android:text="@string/challenge_label_3"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_sex"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignLeft="@id/rel_id"
+                android:layout_below="@+id/rel_nick"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/light_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:drawableLeft="@drawable/challenge_point"
+                    android:gravity="center_vertical"
+                    android:text="@string/challenge_label_4"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" >
+                </TextView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/buy_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/chlg_splitline"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" >
+
+            <Button
+                android:id="@+id/create_challenge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_orange"
+                android:text="@string/creat_challenge"
+                android:textColor="@color/orange_btn_text_color" />
+
+            <Button
+                android:id="@+id/answer_challenge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@id/create_challenge"
+                android:background="@drawable/btn_orange"
+                android:text="@string/accept_challenge"
+                android:textColor="@color/orange_btn_text_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/challengwaiting"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/bg_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/waiting_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chlg_waitother_player"
+            android:contentDescription="@string/app_name" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/invited_code_label"
+                    style="@style/fourteenLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/challenge_code" />
+
+                <TextView
+                    android:id="@+id/invited_code"
+                    style="@style/fourteenLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/invited_time_label"
+                    style="@style/fourteenLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/challenge_time" />
+
+                <TextView
+                    android:id="@+id/invited_time"
+                    style="@style/fourteenLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/invited_num_label"
+                    style="@style/fourteenLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/challenge_num" />
+
+                <TextView
+                    android:id="@+id/invited_num"
+                    style="@style/fourteenLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/invited_friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:background="@drawable/btn_orange"
+                    android:textColor="@color/orange_btn_text_color"
+                    android:text="@string/invited_friend" />
+            </TableRow>
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/challenge_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/chlg_splitline"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tip_label"
+            style="@style/fourteenLabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/challenge_tip" />
+    </LinearLayout>
+
+</LinearLayout>

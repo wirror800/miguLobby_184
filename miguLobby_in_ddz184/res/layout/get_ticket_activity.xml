@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_common"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <TextView
+        android:id="@+id/tvCall"
+        style="@style/returnTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_back"
+        android:clickable="true"
+        android:drawableRight="@drawable/phone"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/server_call"
+        android:textColor="@color/blue_btn_text_color" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frameTitle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/bg_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tvInfo"
+            style="@style/smallYellowTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/msg_bg"
+            android:drawableLeft="@drawable/broadcast"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/tick_info" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvInfo"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/tvTicket"
+                style="@style/yellowTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="100dp"
+                android:text="@string/tick_count" />
+
+            <TextView
+                android:id="@+id/tvTicketValue"
+                style="@style/smallYellowTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tvTicket"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tvTicket" />
+
+            <TextView
+                android:id="@+id/tvTickNoEnough"
+                style="@style/smallYellowTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tvTicket"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/tvTicketValue"
+                android:text="@string/tick_no_enough"
+                android:textColor="#46bcff" />
+
+            <RadioGroup
+                android:id="@+id/balance_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tvTicket"
+                android:layout_below="@id/tvTicket"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/thirty_ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_radio_30"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/fifty_ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_radio_50"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/hundred_ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn_radio_100"
+                    android:button="@null" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/mobile_label"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/balance_radio"
+                android:layout_below="@+id/balance_radio"
+                android:layout_marginTop="20dp"
+                android:text="@string/action_input_phone_number" />
+
+            <EditText
+                android:id="@+id/et_mobile"
+                style="@style/CenterEditStyle"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mobile_label"
+                android:layout_toRightOf="@+id/mobile_label"
+                android:digits="1234567890x"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="#8f8f8f" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/mobile_info"
+                style="@style/blueTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/et_mobile"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/et_mobile"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/ensure_mobile_label"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mobile_label"
+                android:layout_below="@+id/mobile_label"
+                android:layout_marginTop="20dp"
+                android:text="@string/action_input_phone_number_again" />
+
+            <EditText
+                android:id="@+id/et_ensure_mobile"
+                style="@style/CenterEditStyle"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ensure_mobile_label"
+                android:layout_toRightOf="@+id/ensure_mobile_label"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="#8f8f8f" />
+
+            <TextView
+                android:id="@+id/ensure_mobile_info"
+                style="@style/blueTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/et_ensure_mobile"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/et_ensure_mobile"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/get_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ensure_mobile_label"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_orange"
+                android:gravity="center"
+                android:text="@string/info_get"
+                android:textColor="@color/orange_btn_text_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/agree_web"
+                style="@style/smallYellowTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/get_ticket"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/get_ticket"
+                android:text="@string/action_huafeijuan_linqu_tiaoyue" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

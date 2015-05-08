@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_common"
+    android:orientation="vertical" >
+
+    <!-- title头部 -->
+
+    <include
+        android:id="@+id/titlePart"
+        layout="@layout/common_title_layout" />
+
+    <ImageView
+        android:id="@+id/btnFreeBean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17dp"
+        android:background="@anim/btn_freebean_anim"
+        android:clickable="true"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/titlePart"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/bg_content"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ListView
+            android:id="@id/android:list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/market_devider"
+            android:listSelector="#00000000"
+            android:scrollbarThumbVertical="@drawable/vscroll" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

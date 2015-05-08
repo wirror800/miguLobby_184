@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_common" >
+
+    <!-- title头部 -->
+
+    <include layout="@layout/common_title_layout" />
+    <ImageView
+        android:id="@+id/btnFreeBean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17dp"
+        android:clickable="true"
+        android:background="@anim/btn_freebean_anim"
+        android:contentDescription="@string/app_name"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frameTitle"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/bg_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="0dp" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="0dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvNoticeSystem"
+                    style="@style/contexTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/left_tab_bg"
+                    android:gravity="center"
+                    android:text="@string/noticeSystem" />
+
+                <TextView
+                    android:id="@+id/tvNoticePerson"
+                    style="@style/contexTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/right_tab_bg"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="@string/noticePerson" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/mViewPager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="0.0dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:flipInterval="30"
+            android:paddingBottom="10dp"
+            android:persistentDrawingCache="animation" />
+    </LinearLayout>
+
+</RelativeLayout>

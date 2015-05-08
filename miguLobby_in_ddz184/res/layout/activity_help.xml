@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lobbyright_bg"
+    android:gravity="center_horizontal" >
+
+    <FrameLayout
+        android:id="@+id/frameTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/title_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvBack"
+            style="@style/returnTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/back_selector"
+            android:clickable="true"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="@string/help"
+            android:textColor="#333333"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvAdvice"
+            style="@style/returnTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/advice_selector"
+            android:clickable="true"
+            android:gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/relateContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/frameTitle"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/normal_logo" />
+
+        <TextView
+            android:id="@+id/tvCopyRight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvQQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvQQGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btnCallPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/customcall_selector"
+            android:gravity="center"
+            android:src="@drawable/custom_phone" />
+    </LinearLayout>
+
+</RelativeLayout>

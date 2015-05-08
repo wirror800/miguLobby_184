@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_common"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="-5dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/bg_content" >
+
+        <Button
+            android:id="@+id/forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_orange"
+            android:text="@string/info_change_password"
+            android:textColor="@color/orange_btn_text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/modify_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="-10dp"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@id/forget_password"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/mobile_user"
+                style="@style/smallYellowTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:button="@drawable/btn_radio"
+                android:paddingLeft="18dp"
+                android:text="@string/modifyLabel1" />
+
+            <RadioButton
+                android:id="@+id/not_mobile_user"
+                style="@style/smallYellowTextStyle"
+                android:layout_height="25dp"
+                android:layout_marginTop="2dp"
+                android:button="@drawable/btn_radio"
+                android:paddingLeft="18dp"
+                android:text="@string/modifyLabel2" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/pass_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/modify_radio"
+            android:layout_below="@id/modify_radio"
+            android:layout_gravity="right"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/pass_rel_1st"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <ImageView
+                    android:id="@+id/iconId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_id" />
+
+                <TextView
+                    android:id="@+id/password_label1"
+                    style="@style/smallTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/passwordLabel1" />
+
+                <EditText
+                    android:id="@+id/et1_password"
+                    style="@style/PasswordEditStyle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/password_label1"
+                    android:maxLength="16" />
+
+                <ImageView
+                    android:id="@+id/error1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/et1_password"
+                    android:src="@drawable/error"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/right1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/et1_password"
+                    android:src="@drawable/right"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/password_error1"
+                style="@style/smallBlueTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/pass_rel_1st"
+                android:layout_below="@id/pass_rel_1st"
+                android:layout_marginLeft="120dp"
+                android:text="@string/passwordError1"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:id="@+id/pass_rel_2nd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password_error1"
+                android:layout_marginTop="0dp" >
+
+                <ImageView
+                    android:id="@+id/iconCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_card" />
+
+                <TextView
+                    android:id="@+id/password_label2"
+                    style="@style/smallTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/passwordLabel2" />
+
+                <EditText
+                    android:id="@+id/et2_password"
+                    style="@style/PasswordEditStyle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/password_label2" />
+
+                <ImageView
+                    android:id="@+id/right2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/et2_password"
+                    android:src="@drawable/right"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/error2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/et2_password"
+                    android:src="@drawable/error"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/password_error2"
+                style="@style/smallBlueTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/pass_rel_2nd"
+                android:layout_below="@id/pass_rel_2nd"
+                android:layout_marginLeft="120dp"
+                android:text="@string/passwordError2"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:id="@+id/pass_rel_3th"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password_error2"
+                android:layout_marginTop="0dp" >
+
+                <ImageView
+                    android:id="@+id/iconPhoneNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_phone_num" />
+
+                <TextView
+                    android:id="@+id/password_label3"
+                    style="@style/smallTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/passwordLabel3" />
+
+                <EditText
+                    android:id="@+id/et3_password"
+                    style="@style/PasswordEditStyle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/password_label3" />
+
+                <ImageView
+                    android:id="@+id/error3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/et3_password"
+                    android:src="@drawable/error"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/right3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/et3_password"
+                    android:src="@drawable/right"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/password_error3"
+                style="@style/smallBlueTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/pass_rel_3th"
+                android:layout_below="@id/pass_rel_3th"
+                android:layout_marginLeft="120dp"
+                android:text="@string/passwordError3"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/mini_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_orange"
+            android:text="@string/info_save"
+            android:textColor="@color/orange_btn_text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

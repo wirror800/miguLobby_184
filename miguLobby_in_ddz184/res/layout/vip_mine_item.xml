@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvDetail"
+        style="@style/baseStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:text="@string/ddz_vip"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/btn_orange"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:text="@string/info_get"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/orange_btn_text_color" />
+
+</FrameLayout>

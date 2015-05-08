@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rel_basic"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/rel_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true" >
+
+                <ImageView
+                    android:id="@+id/imgID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_id" />
+
+                <TextView
+                    android:id="@+id/id_label"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imgID"
+                    android:text="ID: " />
+
+                <TextView
+                    android:id="@+id/id"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/id_label" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/accout_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_id"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/divider"
+                android:contentDescription="@string/app_name" />
+
+            <RelativeLayout
+                android:id="@+id/rel_accout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/rel_id"
+                android:layout_below="@+id/accout_line"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/light_bg" />
+
+                <ImageView
+                    android:id="@+id/imgAcc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/icon_account" />
+
+                <TextView
+                    android:id="@+id/account_label"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imgAcc"
+                    android:text="@string/ddz_account_2" />
+
+                <TextView
+                    android:id="@+id/account"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/account_label" />
+
+                <ImageView
+                    android:id="@+id/diamond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/account"
+                    android:src="@drawable/icon_diamond"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_orange"
+                    android:text="@string/info_change_password"
+                    android:textColor="@color/orange_btn_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/nick_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_accout"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/divider"
+                android:contentDescription="@string/app_name" />
+
+            <RelativeLayout
+                android:id="@+id/rel_nick"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/rel_id"
+                android:layout_below="@+id/nick_line"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/imgNick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/icon_nick_name" />
+
+                <TextView
+                    android:id="@+id/nick_label"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imgNick"
+                    android:text="@string/info_nickname" />
+
+                <EditText
+                    android:id="@+id/nick_name"
+                    style="@style/CenterEditStyle"
+                    android:layout_width="110dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/nick_label"
+                    android:maxLength="8"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/nick_text"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/nick_label"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/ensure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_orange"
+                    android:text="@string/Ensure"
+                    android:textColor="@color/orange_btn_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/sex_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_nick"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/divider"
+                android:contentDescription="@string/app_name" />
+
+            <RelativeLayout
+                android:id="@+id/rel_sex"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/rel_id"
+                android:layout_below="@+id/sex_line"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/light_bg" />
+
+                <RadioGroup
+                    android:id="@+id/sex_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/btn_male"
+                        style="@style/contexTextStyle"
+                        android:button="@drawable/btn_radio"
+                        android:drawableLeft="@drawable/icon_male"
+                        android:paddingLeft="18dp"
+                        android:text="@string/info_male" />
+
+                    <RadioButton
+                        android:id="@+id/btn_female"
+                        style="@style/contexTextStyle"
+                        android:layout_marginLeft="10dp"
+                        android:button="@drawable/btn_radio"
+                        android:drawableLeft="@drawable/icon_female"
+                        android:paddingLeft="15dp"
+                        android:text="@string/info_famale" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <!-- 大师分新增 -->
+
+            <ImageView
+                android:id="@+id/dashifen_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_sex"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/divider" />
+
+            <RelativeLayout
+                android:id="@+id/rel_dashifen"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/dashifen_line"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:id="@+id/icon_dashifen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/ic_dashifen" />
+
+                <TextView
+                    android:id="@+id/tv_dashifen"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/icon_dashifen"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/icon_dashifen"
+                    android:text="@string/info_dashifen" />
+
+                <TextView
+                    android:id="@+id/tvDashiScore"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/icon_dashifen"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toRightOf="@+id/tv_dashifen" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/icon_dashifen"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tvDashiScore"
+                    android:text="@string/info_chenghao" />
+
+                <TextView
+                    android:id="@+id/tvDashiName"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/icon_dashifen"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toRightOf="@+id/tvName" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvWhatDashiScore"
+                style="@style/contexTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_dashifen"
+                android:gravity="center"
+                android:text="@string/info_what_is_dashifen"
+                android:textColor="#feef00" />
+
+            <ImageView
+                android:id="@+id/bean_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWhatDashiScore"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/divider" />
+
+            <RelativeLayout
+                android:id="@+id/rel_bean"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/rel_id"
+                android:layout_below="@+id/bean_line"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/light_bg" />
+
+                <ImageView
+                    android:id="@+id/imgBean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/icon_bean" />
+
+                <TextView
+                    android:id="@+id/bean_label"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imgBean"
+                    android:text="@string/info_ledou" />
+
+                <TextView
+                    android:id="@+id/bean"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/bean_label" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/gold_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_bean"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/divider" />
+
+            <RelativeLayout
+                android:id="@+id/rel_gold"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/rel_id"
+                android:layout_below="@+id/gold_line"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:id="@+id/imgGold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/icon_gold" />
+
+                <TextView
+                    android:id="@+id/gold_label"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imgGold"
+                    android:text="@string/info_yuanbao" />
+
+                <TextView
+                    android:id="@+id/gold"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/gold_label" />
+
+                <Button
+                    android:id="@+id/exchange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_orange"
+                    android:text="@string/info_get"
+                    android:textColor="@color/orange_btn_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ticket_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_gold"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/divider" />
+
+            <RelativeLayout
+                android:id="@+id/rel_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/rel_id"
+                android:layout_below="@+id/ticket_line"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/light_bg" />
+
+                <ImageView
+                    android:id="@+id/imgTicket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/icon_phone_ticket" />
+
+                <TextView
+                    android:id="@+id/ticket_label"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imgTicket"
+                    android:text="@string/info_huafeijuan" />
+
+                <TextView
+                    android:id="@+id/ticket"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/ticket_label" />
+
+                <Button
+                    android:id="@+id/receive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_orange"
+                    android:text="@string/info_get"
+                    android:textColor="@color/orange_btn_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

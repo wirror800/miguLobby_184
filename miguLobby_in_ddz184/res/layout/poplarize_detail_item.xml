@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:baselineAligned="false"  >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tv_poplarize_date"
+            style="@style/boldTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/poplarize_achieve_date" 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_poplarize_duration"
+            style="@style/boldTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_poplarize_date"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="@string/poplarize_duration" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tv_poplarize_bouns"
+            style="@style/boldTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="9dp"
+            android:paddingBottom="2dp"
+            android:text="@string/poplarize_bouns"
+            android:textColor="#ffdd57" />
+
+        <TextView
+            android:id="@+id/tv_poplarize_state"
+            style="@style/boldTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_poplarize_bouns"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:text="@string/poplarize_gain_date"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_poplarize_gain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_poplarize_bouns"
+            android:layout_marginTop="2dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_orange"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/gain"
+            style="@style/orangeTextStyle"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

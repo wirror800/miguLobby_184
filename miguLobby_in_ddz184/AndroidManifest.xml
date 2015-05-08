@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.MyGame.Midlet"
+    android:versionCode="11"
+    android:versionName="3.4.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 移动SDK 添加权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+ <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <!-- 移动SDK -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- 呀呀美女视频SDK -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+    <!-- 友盟push消息权限    2014-03-10 增加 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.agoo.android.permission.MESSAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于评论模块分享位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 用于评论模块分享位置信息 -->
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+
+    <permission android:name="org.agoo.android.permission.MESSAGE" />
+    
+     <!-- 斯凯权限 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+	
+
+    <application
+        android:name=".CmgameApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="cn.cmgame.billing.api.GameOpenActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CHINAMOBILE_OMS_GAME" />
+
+                <category android:name="android.intent.category.CHINAMOBILE_GAMES" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyGameMidlet"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".SettingActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".GameInfoActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".HelpActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".PersonalActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".FeedbackInfoActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".RegeditActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".service.PopUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Notifiy" >
+        </activity>
+
+        <receiver android:name=".service.MykjReceiver" >
+            <intent-filter>
+
+                <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+                <action android:name="mykj.intent.action.ALARM_BOOT_BROADCAST" />
+                <action android:name="mykj.intent.action.TOKEN_BINDING" />
+                <action android:name="mykj.intent.action.JUST_START_SERVER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".service.MykjService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="mykj.service.BOOT_SERVICE" />
+                <action android:name="mykj.service.JUST_BOOT_SERVICE" />
+                <action android:name="mykj.service.NOTIFIY_MSG" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="GameContentProvider"
+            android:authorities="com.mingyou.gameLobby"
+            android:exported="true" />
+ 		
+ 		<activity
+            android:name=".DDZ"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+
+        </activity>
+         <activity
+            android:name=".DDZ_Local_Activity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+
+        </activity>
+        <activity
+            android:name="com.mykj.andr.ui.MessageBoxActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mykj.andr.ui.ServerCenterActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mykj.andr.ui.UserCenterActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mykj.andr.ui.ModifyPasswordActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mykj.andr.ui.FeedbackInfoActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mykj.andr.ui.VersionInfoActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mykj.andr.ui.GetTicketActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mykj.andr.ui.MarketActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mykj.andr.ui.BackPackActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mykj.andr.ui.ActionActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mykj.andr.ui.MixActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mykj.andr.ui.MixGridActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mykj.andr.ui.ShareActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mykj.andr.ui.PopularizeActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.mykj.game.moregame.MoregameActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mykj.andr.logingift.LotteryDrowActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <meta-data
+            android:name="TD_APP_ID"
+            android:value="EF08DAE0680268331D881D851364FBE6" />
+        <meta-data
+            android:name="ANDROID_NET"
+            android:value="hiapk.com" />
+        <!-- 联通相关配置 -->
+        <!-- 应用开发者ID cpId: -->
+        <!-- 应用开发者ID cpId: -->
+        <meta-data
+            android:name="cpId"
+            android:value="cpid:86005164" >
+        </meta-data>
+
+        <!-- 应用ID AppId: -->
+        <meta-data
+            android:name="AppId"
+            android:value="appid:904516268520130319114019266400" >
+        </meta-data>
+
+        <!-- 联通支付相关配置 -->
+        <meta-data android:name="wostore_billing_otherpay" android:value="false"/>
+		<meta-data android:name="wostore_billing_chinaunicom" android:value="true"/>
+		
+        <!-- 电信爱游戏 -->
+        <activity
+            android:name="cn.egame.terminal.paysdk.EgamePayActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <!-- 友盟消息推送注册组件 -->
+        <receiver
+            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+            android:exported="false" >
+        </receiver>
+        <receiver android:name="com.umeng.message.RegistrationReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.UmengBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mykj.game.ddz.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RE_ELECTION_V2" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.umeng.message.UmengService"
+            android:exported="true"
+            android:process=":umengService_v1" >
+            <intent-filter>
+                <action android:name="com.mykj.game.ddz.intent.action.START" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mykj.game.ddz.intent.action.COCKROACH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="org.android.agoo.service.ElectionService"
+            android:exported="true"
+            android:process=":umengService_v1" >
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_V2" />
+            </intent-filter>
+        </service>
+        <service android:name="com.umeng.message.UmengIntentService" />
+
+        <!-- =================================== -->
+
+
+        <!-- 友盟appkey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5369ead056240b536802054c" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="57aa80abb81a53abe8d69869aa88f887" >
+        </meta-data>
+
+        
+		<!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.android.app.sdk.WapPayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+    </application>
+
+</manifest>

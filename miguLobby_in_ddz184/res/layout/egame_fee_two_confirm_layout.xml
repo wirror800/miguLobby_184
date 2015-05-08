@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="288dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/pop_up_box_bg" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/egame_logo_icon"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/egame_fee_btn_close_selector" />
+
+        <RelativeLayout
+            android:id="@+id/one_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="70dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/one_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="尊敬的用户，您即将购买:"
+                android:textColor="#888888"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/one_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/one_text1"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@drawable/egame_icon_arrow"
+                android:drawablePadding="16dp"
+                android:textColor="#888888"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/one_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/one_text2"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@drawable/egame_icon_arrow"
+                android:drawablePadding="16dp"
+                android:textColor="#888888"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/one_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/one_text3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:textColor="#888888"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/one_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="115dp"
+                android:background="@drawable/egame_fee_btn_selector"
+                android:text="确认支付"
+                android:textColor="#ffffff"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/two_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="70dp" >
+
+            <TextView
+                android:id="@+id/two_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="尊敬的用户:"
+                android:textColor="#888888"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/two_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/two_text1"
+                android:layout_marginTop="6dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#888888"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="115dp" >
+
+                <Button
+                    android:id="@+id/two_btn1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/egame_fee_btn_selector"
+                    android:text="确认"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/two_btn2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/egame_fee_btn_selector"
+                    android:text="取消"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/three_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="70dp" >
+
+            <TextView
+                android:id="@+id/three_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="39dp"
+                android:text="支付中，请稍候..."
+                android:textColor="#888888"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/three_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="115dp"
+                android:background="@drawable/egame_fee_btn_selector"
+                android:text="返回游戏"
+                android:textColor="#ffffff"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="233dp"
+            android:background="#cccccc" />
+
+        <TextView
+            android:id="@+id/footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textColor="#bbbbbb"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

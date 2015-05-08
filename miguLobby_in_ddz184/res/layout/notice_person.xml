@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lvNoticePerson"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/divider"
+        android:listSelector="#00000000"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:scrollbarThumbVertical="@drawable/vscroll" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/tvPNoticeMsg"
+        style="@style/contexTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pnodata"
+        android:visibility="invisible" />
+
+</LinearLayout>

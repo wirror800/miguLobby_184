@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lobbyright_bg"
+    android:gravity="center_horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/frameTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/title_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/tvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/back_selector" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人中心"
+            android:textColor="#063552"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearTabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameTitle"
+        android:layout_marginTop="-3dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvBaseInfo"
+            style="@style/returnTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/tab_selected"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="基本资料" />
+
+        <TextView
+            android:id="@+id/tvDetail"
+            style="@style/returnTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/tab_normal"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="详细信息" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpagerTab"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/linearTabs"
+        android:layout_margin="0.0dip"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</RelativeLayout>

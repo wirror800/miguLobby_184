@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:shadowColor="#ff01264f"
+            android:shadowDx="2.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:singleLine="true"
+            android:text="Vip等级"
+            android:textColor="#afd3ea"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:shadowColor="#ff01264f"
+            android:shadowDx="2.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:singleLine="true"
+            android:text="@string/ddz_vip_jiacheng"
+            android:textColor="#afd3ea"
+             android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:shadowColor="#ff01264f"
+            android:shadowDx="2.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:singleLine="true"
+            android:text="@string/ddz_vip_hecheng_chenggonglu"
+            android:textColor="#afd3ea"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        
+         <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:shadowColor="#ff01264f"
+            android:shadowDx="2.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:singleLine="true"
+            android:text="@string/ddz_vip_week_gift"
+            android:textColor="#afd3ea"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:shadowColor="#ff01264f"
+            android:shadowDx="2.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:singleLine="true"
+            android:text="@string/ddz_vip_other_player_info"
+            android:textColor="#afd3ea"
+             android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvprivilege"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/market_devider"
+        android:listSelector="#00000000"
+        android:scrollbarThumbVertical="@drawable/vscroll" >
+    </ListView>
+
+</LinearLayout>

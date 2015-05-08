@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lobbyright_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/frameTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/title_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvBack"
+            style="@style/returnTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/back_selector"
+            android:clickable="true"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:textColor="#333333"
+            android:textSize="25sp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relGame"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imgGameIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/default_gameinfo" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="8dp"
+                    android:layout_alignLeft="@+id/imgGameIcon"
+                    android:layout_alignRight="@+id/imgGameIcon"
+                    android:layout_below="@+id/imgGameIcon"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_bar"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tvGameName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imgGameIcon"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imgGameIcon"
+                    android:textColor="#333333"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvGameSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tvGameName"
+                    android:layout_below="@+id/tvGameName"
+                    android:text="大小:"
+                    android:textColor="#616161"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvSizeNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvGameSize"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/tvGameSize"
+                    android:textColor="#616161"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvOnLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tvGameSize"
+                    android:layout_below="@+id/tvGameSize"
+                    android:text="在线:"
+                    android:textColor="#616161"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvOnlineNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvOnLine"
+                    android:layout_alignLeft="@+id/tvSizeNum"
+                    android:layout_toRightOf="@+id/tvOnLine"
+                    android:textColor="#616161"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/btnGameDownLoad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="40dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="#7f3a01" />
+
+                <ImageView
+                    android:id="@+id/imgline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imgGameIcon"
+                    android:layout_alignRight="@+id/btnGameDownLoad"
+                    android:layout_below="@+id/imgGameIcon"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/lobbyhorizontal_line" />
+
+                <TextView
+                    android:id="@+id/tvGameSummary"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imgGameIcon"
+                    android:layout_alignRight="@+id/btnGameDownLoad"
+                    android:layout_below="@+id/imgline"
+                    android:layout_marginTop="10dp"
+                    android:text="游戏简介"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/tvGameInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imgGameIcon"
+                    android:layout_alignRight="@+id/btnGameDownLoad"
+                    android:layout_below="@+id/tvGameSummary"
+                    android:minLines="3"
+                    android:textColor="#616161" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvGameInfo"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/gameinfo_line_up" />
+            </RelativeLayout>
+
+            <Gallery
+                android:id="@+id/galGameInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/gameinfo_gal_bg" >
+            </Gallery>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gameinfo_line_down" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gameinfo_below_bg" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

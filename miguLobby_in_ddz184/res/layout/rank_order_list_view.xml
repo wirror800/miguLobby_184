@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:background="@drawable/force_dialog_bg"
+        android:orientation="vertical" >
+
+        <!-- title头部 -->
+
+        <TextView
+            android:id="@+id/system_pop_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/dialog_title_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="@string/rankorder"
+            android:textColor="#903300"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <!-- new_center_bg -->
+
+            <TextView
+                android:id="@+id/tvOwerRank"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:shadowColor="#FF000000"
+                android:shadowDx="1.0"
+                android:shadowDy="2.0"
+                android:shadowRadius="2.0"
+                android:text="@string/match_group_rank"
+                android:textColor="#ffdd57"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#004365"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:shadowColor="#ff01264f"
+                    android:shadowDx="2.0"
+                    android:shadowDy="2.0"
+                    android:shadowRadius="2.0"
+                    android:singleLine="true"
+                    android:text="@string/match_group_rank_label"
+                    android:textColor="#afd3ea"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:shadowColor="#ff01264f"
+                    android:shadowDx="2.0"
+                    android:shadowDy="2.0"
+                    android:shadowRadius="2.0"
+                    android:singleLine="true"
+                    android:text="@string/match_group_jifen_label"
+                    android:textColor="#afd3ea"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:shadowColor="#ff01264f"
+                    android:shadowDx="2.0"
+                    android:shadowDy="2.0"
+                    android:shadowRadius="2.0"
+                    android:singleLine="true"
+                    android:text="@string/nickname"
+                    android:textColor="#afd3ea"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/rank_list_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/market_devider"
+                android:listSelector="#00000000"
+                android:scrollbarThumbVertical="@drawable/vscroll" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/login_gift_btn_cancel"
+        android:contentDescription="@string/app_name" />
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="355.3dip"
+    android:layout_height="219.3dip"
+    android:background="#e0000000" >
+
+    <RelativeLayout
+        android:id="@+id/upgrade_bg_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/upgrade_bg_top" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/login_find_out_new_verson"
+            android:textColor="#063552"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/upgrade_bg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/upgrade_bg_bottom"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/upgrade_bg_top"
+        android:layout_alignTop="@id/upgrade_bg_bottom"
+        android:background="@drawable/upgrade_bg_center"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/upgrade_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="25dp"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13.3dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_upgrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="57.3dip"
+            android:background="@drawable/btn_update_confirm" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="52dip"
+            android:background="@drawable/btn_update_cancel" />
+    </LinearLayout>
+
+</RelativeLayout>

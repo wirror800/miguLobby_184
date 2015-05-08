@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="horizontal"
+    android:weightSum="3" >
+
+    <TextView
+        android:id="@+id/tvRank"
+        style="@style/baseStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:shadowColor="#FF000000"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:text="@string/match_group_rank_label"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvscore"
+        style="@style/baseStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:shadowColor="#FF000000"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:text="@string/match_group_jifen_label"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvnickName"
+        style="@style/baseStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:shadowColor="#FF000000"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:text="@string/nickname"
+        android:textSize="18sp" />
+
+</LinearLayout>

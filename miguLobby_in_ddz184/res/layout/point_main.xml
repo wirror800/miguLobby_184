@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_common"
+        android:orientation="vertical" >
+
+        <!-- title头部 -->
+
+	<include layout="@layout/common_title_layout" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvRecharge"
+                        style="@style/contexTextStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/point_left_tab_bg"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text="@string/recharge" />
+
+                    <TextView
+                        android:id="@+id/tvBalance"
+                        style="@style/contexTextStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/point_center_tab_bg"
+                        android:gravity="center"
+                        android:text="@string/balance" />
+
+                    <TextView
+                        android:id="@+id/tvPersonDetail"
+                        style="@style/contexTextStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/point_center_tab_bg"
+                        android:gravity="center"
+                        android:text="@string/personDetail" />
+
+                    <TextView
+                        android:id="@+id/tvPointHelp"
+                        style="@style/contexTextStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/point_right_tab_bg"
+                        android:gravity="center"
+                        android:text="@string/pointHelp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivArrows"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:scaleType="matrix"
+                    android:src="@drawable/arrows" />
+            </FrameLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/mPointViewPager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="0.0dip"
+                android:flipInterval="30"
+                android:persistentDrawingCache="animation" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/contexTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="15dp"
+        android:text="@string/descr" />
+
+</FrameLayout>

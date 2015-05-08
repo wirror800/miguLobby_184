@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/real_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/account_label"
+            android:layout_below="@+id/id_label"
+            android:layout_marginTop="13dp" >
+
+            <TextView
+                android:id="@+id/real_label"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="真实姓名: "
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/real_name"
+                style="@style/CenterEditStyle"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/real_label"
+                android:maxLength="8"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/idnum_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/real_rel"
+            android:layout_below="@+id/real_rel"
+            android:layout_marginTop="13dp" >
+
+            <TextView
+                android:id="@+id/idnum_label"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="身份证号: "
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/idnum_num"
+                style="@style/CenterEditStyle"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/idnum_label"
+                android:maxLength="18"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mobile_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/real_rel"
+            android:layout_below="@+id/idnum_rel"
+            android:layout_marginTop="13dp" >
+
+            <TextView
+                android:id="@+id/mobile_label"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="手机号码: "
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/mobile_num"
+                style="@style/CenterEditStyle"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/mobile_label"
+                android:maxLength="11" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/email_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/real_rel"
+            android:layout_below="@+id/mobile_rel"
+            android:layout_marginTop="13dp" >
+
+            <TextView
+                android:id="@+id/email_label"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="电子邮箱: "
+                android:textColor="#000000"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/email_text"
+                style="@style/CenterEditStyle"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/email_label"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/real_rel"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/real_rel" >
+
+            <TextView
+                android:id="@+id/detail_label_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/printinfo_"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/detail_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_label_"
+                android:layout_centerHorizontal="true"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/printinfo"
+                android:textColor="#4c4c4c"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/btn_dsave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_label"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/yellow_selector"
+                android:paddingBottom="4dp"
+                android:scaleType="center"
+                android:src="@drawable/load_src" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

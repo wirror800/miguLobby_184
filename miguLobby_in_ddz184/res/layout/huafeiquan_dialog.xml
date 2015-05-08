@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/force_dialog_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/dialogTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_title_bg"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/prompt" />
+
+    <FrameLayout
+        android:layout_width="389dp"
+        android:layout_height="128dp"
+        android:gravity="center_horizontal" >
+
+        <ListView
+            android:id="@+id/date_list"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:cacheColorHint="#00000000"
+            android:divider="#FFCC00"
+            android:listSelector="#00000000"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp" >
+        </ListView>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" 
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/ivCancel"
+            style="@style/dialogButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/btn_orange"
+            android:textColor="@color/orange_btn_text_color"
+            android:text="@string/ddz_pay_know" />
+
+        <Button
+            android:id="@+id/ivEnsure"
+            style="@style/dialogButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ivCancel"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@id/ivCancel"
+            android:background="@drawable/btn_orange"
+            android:textColor="@color/orange_btn_text_color"
+            android:text="@string/ddz_pay_duihuan" />
+    </RelativeLayout>
+
+</LinearLayout>

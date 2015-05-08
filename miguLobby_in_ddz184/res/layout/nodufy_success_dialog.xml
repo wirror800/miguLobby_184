@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/force_dialog_bg"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="4dp" >
+	
+    
+    <TextView
+        android:id="@+id/system_pop_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dialog_title_bg"
+        android:gravity="center"
+        android:text="@string/prompt2"
+        android:textColor="#903300"
+        android:textSize="24sp" />
+    
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff2ae"
+        android:layout_margin="10dp"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:id="@+id/tlUserInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+         >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registe_wanshan_account_lable_1"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_show_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:singleLine="true"
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/registe_wanshan_nickname"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_show_niname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:singleLine="true"
+                 />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tvOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_margin="10dp"
+        android:text="@string/registe_wanshan_modify_tip"
+        android:textColor="#83d2ef"
+        android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCancel"
+        style="@style/dialogButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dip"
+        android:background="@drawable/btn_orange"
+        android:textColor="@color/orange_btn_text_color"
+        android:text="@string/Ensure"
+         />
+    
+
+</LinearLayout>

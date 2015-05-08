@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llmainview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLeft"
+        android:layout_width="131dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/lobbyleft_bg" >
+
+        <LinearLayout
+            android:id="@+id/linearLogined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/relativeUserImg"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:background="@drawable/userimage_bg" >
+
+                <ImageView
+                    android:id="@+id/userimg"
+                    android:layout_width="104dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="12dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/user_no" />
+
+                <TextView
+                    android:id="@+id/nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/userimg"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLogining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/loginingheadbg"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:background="@drawable/userimage_bg" >
+
+                <ImageView
+                    android:id="@+id/logininghead"
+                    android:layout_width="104dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="12dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/user_no" />
+
+                <TextView
+                    android:id="@+id/loginingInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center" />
+
+                <ProgressBar
+                    android:id="@+id/progress_logining"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearNoLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:id="@+id/relatenoLoginUserImg"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:background="@drawable/userimage_bg" >
+
+                <ImageView
+                    android:id="@+id/imgDefault"
+                    android:layout_width="104dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="12dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/user_no" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/btnQuickLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/quicklogin_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/fastlogin"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/btnLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/longbtn_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/accoutlogin"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/btnRegedit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/longbtn_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/regedit"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnShareFriends"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnSetting"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/longbtn_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/sharefriend"
+            android:textColor="#333333" />
+
+        <ImageButton
+            android:id="@+id/btnSetting"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/shortbtn_selector"
+            android:gravity="center"
+            android:src="@drawable/setting" />
+
+        <ImageButton
+            android:id="@+id/btnHelp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnSetting"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shortbtn_selector"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:src="@drawable/help" />
+
+        <TextView
+            android:id="@+id/btnGamePlayer"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnSetting"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/gameplayerbtn_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="游戏玩家"
+            android:textColor="#be0700"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/lobbyvertical_line" />
+
+    <RelativeLayout
+        android:id="@+id/linearRight"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/lobbyright_bg" >
+
+        <android.support.v4.view.ViewPager
+            android:clickable="true"
+            android:id="@+id/adv_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="105dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center" />
+
+        <ProgressBar
+            android:id="@+id/progress_gal"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/gallery_point_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/adv_pager"
+            android:layout_alignLeft="@+id/adv_pager"
+            android:layout_alignRight="@+id/adv_pager"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/lobbyhorizontal_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/adv_pager"
+            android:layout_alignRight="@+id/adv_pager"
+            android:layout_below="@id/adv_pager"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/lobbyhorizontal_line" />
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/adv_pager"
+            android:layout_alignRight="@+id/adv_pager"
+            android:layout_below="@+id/lobbyhorizontal_line"
+            android:layout_marginTop="2dp"
+            android:columnWidth="80dp"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" >
+        </GridView>
+
+        <ProgressBar
+            android:id="@+id/progress_gird"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

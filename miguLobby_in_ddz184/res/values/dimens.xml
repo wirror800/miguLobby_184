@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="lay_card_leftMargin">5.0dip</dimen>
+    <dimen name="topbar_height">48.0dip</dimen>
+    <dimen name="dropmenu_width">110dip</dimen>
+    <!-- 抽奖机布局参数 -->
+    <dimen name="lo_back_btn_leftMargin">14px</dimen>
+    <dimen name="lo_back_btn_topMargin">8px</dimen>
+    <dimen name="lo_winner_list_leftMargin">110px</dimen>
+    <dimen name="lo_winner_list_topMargin">30px</dimen>
+    <dimen name="lo_winner_list_width">460px</dimen>
+    <dimen name="lo_winner_list_height">60px</dimen>
+    <dimen name="lo_multi_drow_btn_leftMargin">610px</dimen>
+    <dimen name="lo_multi_drow_btn_topMargin">250px</dimen>
+    <dimen name="lo_once_drow_btn_leftMargin">610px</dimen>
+    <dimen name="lo_once_drow_btn_topMargin">390px</dimen>
+    <dimen name="lo_cheat_btn_leftMargin">420px</dimen>
+    <dimen name="lo_cheat_btn_topMargin">340px</dimen>
+    <dimen name="lo_add_ledou_btn_leftMargin">750px</dimen>
+    <dimen name="lo_add_ledou_btn_topMargin">120px</dimen>
+    <dimen name="lo_hint1_tv_leftMargin">190px</dimen>
+    <dimen name="lo_hint1_tv_topMargin">220px</dimen>
+    <dimen name="lo_hint1_tv_width">300px</dimen>
+    <dimen name="lo_hint1_tv_height">30px</dimen>
+    <dimen name="lo_hint1_tv_textsize">10sp</dimen>
+    <dimen name="lo_hint2_tv_leftMargin">170px</dimen>
+    <dimen name="lo_hint2_tv_topMargin">280px</dimen>
+    <dimen name="lo_hint2_tv_width">270px</dimen>
+    <dimen name="lo_hint2_tv_height">50px</dimen>
+    <dimen name="lo_hint2_tv_textsize">7sp</dimen>
+    <dimen name="lo_hint3_tv_leftMargin">600px</dimen>
+    <dimen name="lo_hint3_tv_topMargin">195px</dimen>
+    <dimen name="lo_hint3_tv_width">200px</dimen>
+    <dimen name="lo_hint3_tv_height">30px</dimen>
+    <dimen name="lo_hint3_tv_textsize">7sp</dimen>
+    <dimen name="lo_drow_view_leftMargin">10px</dimen>
+    <dimen name="lo_drow_view_topMargin">94px</dimen>
+    <dimen name="img_interval">2px</dimen>
+    <dimen name="lo_drow_view_neon_leftMargin">11px</dimen>
+    <dimen name="lo_drow_view_neon_topMargin">11px</dimen>
+    <dimen name="lo_drow_view_ledou_leftMargin">630px</dimen>
+    <dimen name="lo_drow_view_ledou_topMargin">120px</dimen>
+    <dimen name="lo_drow_view_winner_name_leftMargin">90px</dimen>
+    <dimen name="lo_drow_view_winner_name_topMargin">2px</dimen>
+    <dimen name="lo_drow_view_winner_prodesc_leftMargin">320px</dimen>
+    <dimen name="lo_drow_view_winner_prodesc_topMargin">2px</dimen>
+</resources>

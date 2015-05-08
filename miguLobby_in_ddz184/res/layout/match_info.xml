@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rel_detail"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/rel_null"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true" >
+
+            <TextView
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/title_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_null"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/divider"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/rel_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/title_line"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/light_bg"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/matchText"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:text="@string/matchLabel" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/jifen_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_title"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/divider"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/rel_jifen"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@id/rel_title"
+            android:layout_below="@+id/jifen_line"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/icon_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/icon_point" />
+
+            <TextView
+                android:id="@+id/point_label"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/icon_point"
+                android:text="@string/weekPoint" />
+
+            <TextView
+                android:id="@+id/point"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/point_label" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/paiming_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_jifen"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/divider"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/rel_paiming"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@id/rel_title"
+            android:layout_below="@+id/paiming_line"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/light_bg"
+                android:contentDescription="@string/app_name" />
+
+            <ImageView
+                android:id="@+id/icon_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/icon_rank" />
+
+            <TextView
+                android:id="@+id/rank_label"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/icon_rank"
+                android:text="@string/weekRank" />
+
+            <TextView
+                android:id="@+id/rank"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/rank_label" />
+
+            <Button
+                android:id="@+id/btn_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="270dp"
+                android:background="@drawable/btn_orange"
+                android:text="@string/info_paiming"
+                android:textColor="@color/orange_btn_text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/more_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_paiming"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/divider"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/rel_more"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/more_line"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/icon_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/icon_more" />
+
+            <TextView
+                android:id="@+id/query_label"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/icon_more"
+                android:text="@string/moreRank" />
+
+            <Button
+                android:id="@+id/btn_query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="270dp"
+                android:background="@drawable/btn_orange"
+                android:text="@string/info_view"
+                android:textColor="@color/orange_btn_text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rel_more" >
+
+            <TextView
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

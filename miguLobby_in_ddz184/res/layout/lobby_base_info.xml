@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/user_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/user_bg"
+            android:paddingBottom="4dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/user_no" />
+
+        <RelativeLayout
+            android:id="@+id/base_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/user_img" >
+
+            <TextView
+                android:id="@+id/account_label"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text="账号: "
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/account"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/account_label"
+                android:textColor="#5a5a5a" />
+
+            <TextView
+                android:id="@+id/id_label"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/account_label"
+                android:layout_below="@+id/account_label"
+                android:layout_marginTop="13dp"
+                android:text="ID号: "
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/id"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/id_label"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/id_label"
+                android:textColor="#5a5a5a" />
+
+            <RelativeLayout
+                android:id="@+id/nick_rel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/account_label"
+                android:layout_below="@+id/id_label"
+                android:layout_marginTop="13dp" >
+
+                <TextView
+                    android:id="@+id/nick_label"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="昵称: "
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/nick_name"
+                    style="@style/CenterEditStyle"
+                    android:layout_width="110dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/nick_label"
+                    android:maxLength="8"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/sex_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/account_label"
+                android:layout_below="@+id/nick_rel"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/btn_male"
+                    style="@style/contexTextStyle"
+                    android:button="@drawable/lobby_btn_radio"
+                    android:drawableLeft="@drawable/icon_male"
+                    android:paddingLeft="18dp"
+                    android:text="男生"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/btn_female"
+                    style="@style/contexTextStyle"
+                    android:layout_marginLeft="20dp"
+                    android:button="@drawable/lobby_btn_radio"
+                    android:drawableLeft="@drawable/icon_female"
+                    android:paddingLeft="18dp"
+                    android:text="女生"
+                    android:textColor="#000000" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btn_bsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/base_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/yellow_selector"
+            android:paddingBottom="4dp"
+            android:scaleType="center"
+            android:src="@drawable/load_src" />
+    </RelativeLayout>
+
+</RelativeLayout>

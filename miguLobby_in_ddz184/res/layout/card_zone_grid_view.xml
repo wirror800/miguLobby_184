@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:drawSelectorOnTop="false"
+        android:horizontalSpacing="5dp"
+        android:numColumns="2"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scrollbarThumbVertical="@drawable/vscroll"
+        android:tag="gridview"
+        android:verticalSpacing="1dp" />
+
+</FrameLayout>

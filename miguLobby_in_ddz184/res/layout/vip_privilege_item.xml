@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="horizontal"
+    android:weightSum="5" >
+
+    <TextView
+        android:id="@+id/tvvipDegree"
+        style="@style/baseStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:shadowColor="#FF000000"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:text="1"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvexperienceAdd"
+        style="@style/baseStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:shadowColor="#FF000000"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:text="+10%"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvconposeRate"
+        style="@style/baseStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:shadowColor="#FF000000"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:text="+5%"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvweekAward"
+        style="@style/baseStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:shadowColor="#FF000000"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:text="@string/ddz_vip_libao"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvotherExponent"
+        style="@style/baseStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:shadowColor="#FF000000"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:text="@string/ddz_vip_jiazhu"
+        android:textSize="15sp" />
+
+</LinearLayout>

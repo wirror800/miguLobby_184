@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:orientation="vertical"
+    android:paddingLeft="10dp" >
+
+    <LinearLayout
+        android:id="@+id/lyPTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/ivTitleRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/readed"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tvPTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            style="@style/contexTextStyle"
+            android:textColor="#ffde00" />
+
+        <TextView
+            android:id="@+id/tvPFromDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            style="@style/contexTextStyle" />
+
+        <TextView
+            android:id="@+id/tvPTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            style="@style/contexTextStyle" />
+    </LinearLayout> 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/ivContentRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/readed"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tvPContent"
+            style="@style/contexTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:lineSpacingExtra="5dp"
+            android:paddingRight="5dp" />
+    </LinearLayout>
+
+</LinearLayout>

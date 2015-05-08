@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_common" >
+
+    <include layout="@layout/common_title_layout" />
+    <LinearLayout
+        android:id="@+id/poplarize_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/frameTitle"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/bg_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/poplarize_lin_friend"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ListView
+                android:id="@+id/poplarize_friend"
+                style="@style/CommonListStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:divider="@null"
+                android:focusable="true"
+                android:listSelector="#00000000"
+                android:padding="1dp" >
+            </ListView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_bg" 
+                android:padding="1dp"
+                android:layout_marginRight="1dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_bg" 
+                android:padding="1dp"
+                android:layout_marginRight="1dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_bg" 
+                android:padding="1dp"
+                android:layout_marginRight="1dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_bg" 
+                android:padding="1dp"
+                android:layout_marginRight="1dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_bg" 
+                android:padding="1dp"
+                android:layout_marginRight="1dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_bg" 
+                android:padding="1dp"
+                android:layout_marginRight="1dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_bg" 
+                android:padding="1dp"
+                android:layout_marginRight="1dp"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/poplarize_detail"
+            style="@style/CommonListStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:listSelector="#00000000"
+            android:padding="1dp"
+            android:visibility="visible" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/poplarize_unreach_label"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/popilarize_unreach"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/poplarize_label"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/popilarize_empty"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

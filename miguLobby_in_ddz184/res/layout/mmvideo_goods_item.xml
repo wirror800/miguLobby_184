@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <TextView
+        android:id="@+id/tvGoodsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="会员成长礼包"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/ivGoods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/diamond" />
+
+        <TextView
+            android:id="@+id/tvGoodsPresented"
+            style="@style/contexTextSmallStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivGoods"
+            android:layout_alignLeft="@+id/ivGoods"
+            android:layout_alignRight="@+id/ivGoods"
+            android:gravity="center_horizontal"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:text="100钻石"
+            android:textColor="#ffde00"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvGoodsGain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/diamond_gift"
+        android:gravity="center_horizontal"
+        android:text="送4万乐豆"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="价格：10元"
+        android:textSize="12sp" />
+
+</LinearLayout>

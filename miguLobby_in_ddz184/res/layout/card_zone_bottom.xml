@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/btnActAnim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/relMore"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/star_roate" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/card_zone_bottom"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/imgQGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/quick_play"
+        android:contentDescription="@string/app_name"
+        android:src="@anim/quickgame_polish" />
+
+    <ImageView
+        android:id="@+id/imgQGameAnim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgQGame"
+        android:layout_alignLeft="@+id/imgQGame"
+        android:layout_alignRight="@+id/imgQGame"
+        android:layout_alignTop="@+id/imgQGame"
+        android:background="@anim/quickgame_neon"
+        android:contentDescription="@string/app_name"
+        android:src="@anim/quickgame_light" />
+
+    <RelativeLayout
+        android:id="@+id/relMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/btnAct"
+        android:layout_marginLeft="40dp" >
+
+        <Button
+            android:id="@+id/btnMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_more_selector" />
+
+        <ImageView
+            android:id="@+id/imgNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnMore"
+            android:layout_alignTop="@+id/btnMore"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/new_tag"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnActAnim"
+        android:background="@drawable/ic_act"
+        android:clickable="true"
+        android:contentDescription="@string/app_name" />
+
+    <Button
+        android:id="@+id/btnPacket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnAct"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/btnActAnim"
+        android:background="@drawable/ic_backpack" />
+
+    <ImageView
+        android:id="@+id/btnPacket_newTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btnPacket"
+        android:layout_alignTop="@id/btnPacket"
+        android:background="@drawable/new_tag"
+        android:clickable="true"
+        android:contentDescription="@string/app_name" />
+
+    <Button
+        android:id="@+id/btnMarket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnAct"
+        android:layout_alignBottom="@+id/btnAct"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/btnPacket"
+        android:background="@drawable/ic_market" />
+
+    <Button
+        android:id="@+id/btnGettick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnAct"
+        android:layout_alignBottom="@+id/btnAct"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/btnMarket"
+        android:background="@drawable/ic_gettick" />
+
+</RelativeLayout>

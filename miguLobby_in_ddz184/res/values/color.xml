@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dark_disabled">#80323232</color>
+    <color name="white">#ffffff</color>
+    <color name="bg_clolor">#ff0b4d77</color>
+    <color name="black">#000000</color>
+    <color name="share_bg_clolor">#ffc6dfee</color>
+    <color name="orange_btn_text_color">#853403</color>
+    <color name="blue_btn_text_color">#ff0b4a77</color>
+    <color name="area_bg_color">#b0c4d0</color>
+    <color name="transcolor">#00000000</color>
+    <color name="hilight_yellow">#ffff00</color>
+    <!-- 抽奖机相关color -->
+    <color name="winner_list_name_color">#ffed8b</color>
+    <color name="hint2_color">#81ddff</color>
+    <color name="hint3_color">#3de397</color>
+    <color name="pay_text_color">#00ffea</color>
+</resources>

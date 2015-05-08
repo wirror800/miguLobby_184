@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/contexTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/money"
+            android:text="@string/ddz_pay_chongzhi_jiner"
+            android:textColor="#ffde00" />
+
+        <EditText
+            android:id="@+id/etRecharge"
+            style="@style/contexTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/ddz_pay_chongzhi_click_input_jiner"
+            android:inputType="number"
+            android:maxLength="3"
+            android:paddingLeft="5dp" >
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        style="@style/contexTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/ddz_pay_chongzhi_input_lable" />
+
+    <TextView
+        style="@style/contexTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/light_bg"
+        android:drawableLeft="@drawable/tip_icon"
+        android:text="@string/ddz_pay_chongzhi_tip" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/contexTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ddz_pay_chongzhi_support_info" />
+
+        <TextView
+            style="@style/contexTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ddz_pay_chongzhi_zhuanhuan" />
+
+        <TextView
+            style="@style/contexTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ddz_pay_chongzhi_shangxian" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEnsure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_orange"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:textColor="@color/orange_btn_text_color"
+        android:text="@string/Ensure" />
+
+</LinearLayout>

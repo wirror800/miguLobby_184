@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/force_dialog_bg"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp" >
+
+        <TextView
+            android:id="@+id/system_pop_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/dialog_title_bg"
+            android:gravity="center"
+            android:text="@string/wenxintishi"
+            android:textColor="#903300"
+            android:textSize="20sp" />
+
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/head_dizhu"
+                />
+            
+            <TextView 
+                android:id="@+id/tv_warm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_duihuakuang"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="5dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_orange"
+                android:text="@string/Ensure"
+                android:textColor="@color/orange_btn_text_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-25dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/exit_dialog_main"
+        android:background="@drawable/login_gift_btn_cancel" />
+
+</RelativeLayout>

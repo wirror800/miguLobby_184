@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/imgGameIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:src="@drawable/game_default_icon" />
+
+    <ImageView
+        android:id="@+id/imgGameStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:src="@drawable/hot" />
+
+    <ImageView
+        android:id="@+id/imgDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_below="@+id/imgGameIcon"
+        android:layout_centerHorizontal="true"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_bar"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvGameName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-4dp"
+        android:gravity="center"
+        android:textColor="#333333" />
+
+    <TextView
+        android:id="@+id/tvOnlineNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGameName"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#00663b" />
+
+</RelativeLayout>

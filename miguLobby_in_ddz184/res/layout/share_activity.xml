@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_common" >
+
+    <include layout="@layout/common_title_layout" />
+    <ImageView
+        android:id="@+id/btnFreeBean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17dp"
+        android:clickable="true"
+        android:background="@anim/btn_freebean_anim"
+        android:contentDescription="@string/app_name"
+        />
+    
+    <LinearLayout
+        android:id="@+id/share_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/frameTitle"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/bg_content"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:src="@drawable/share_top_label" />
+
+        <include layout="@layout/share_center_view" />
+    </LinearLayout>
+
+</RelativeLayout>

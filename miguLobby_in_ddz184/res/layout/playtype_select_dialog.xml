@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480dp"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/layout_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/force_dialog_bg"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/dialog_title_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="选择玩法"
+            android:textColor="#903300"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_jingdian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/playtipe_select_jingdian" />
+
+        <ImageView
+            android:id="@+id/iv_tag_jingdian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_jingdian"
+            android:layout_alignTop="@id/iv_jingdian"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/icon_zhiyunhui" />
+
+        <ImageView
+            android:id="@+id/iv_laizi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_jingdian"
+            android:layout_toRightOf="@id/iv_jingdian"
+            android:src="@drawable/playtipe_select_laizi" />
+
+        <ImageView
+            android:id="@+id/iv_tag_laizi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_laizi"
+            android:layout_alignTop="@id/iv_laizi"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/icon_zhiyunhui" />
+
+        <ImageView
+            android:id="@+id/iv_xiaobing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_laizi"
+            android:layout_toRightOf="@id/iv_laizi"
+            android:src="@drawable/playtipe_select_xiaobing" />
+
+        <ImageView
+            android:id="@+id/iv_tag_xiaobing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iv_xiaobing"
+            android:layout_alignTop="@id/iv_xiaobing"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/icon_zhiyunhui" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ivCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-25dp"
+        android:layout_toRightOf="@id/layout_main"
+        android:background="@drawable/login_gift_btn_cancel" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mix_list_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/mix_label">
+
+    <ImageView
+        android:id="@+id/mix_list_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:background="@drawable/unknown" />
+
+    <TextView
+        android:id="@+id/mix_list_name"
+        style="@style/smallTextStyle"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mix_list_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="@string/package_daoju_name"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="#fffa00" />
+
+    <TextView
+        android:id="@+id/mix_list_num"
+        style="@style/smallTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mix_list_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="0/10" />
+
+</RelativeLayout>

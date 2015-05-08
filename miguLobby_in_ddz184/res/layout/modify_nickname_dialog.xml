@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/buy_dialog_main"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/force_dialog_bg"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp" >
+
+        <TextView
+            android:id="@+id/tvNickName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:padding="5dp"
+            android:text="@string/new_nickname"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/etNickName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/input_nickname"
+            android:singleLine="true"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:maxLength="8" />
+
+        <TextView
+            android:id="@+id/tvBean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:padding="5dp"
+            android:text="@string/bean_need"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/buy_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/dialog_divider"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:id="@+id/system_pop_ll_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btnConfirm"
+                style="@style/dialogButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_orange"
+                android:text="@string/Ensure"
+                android:textColor="@color/orange_btn_text_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@id/buy_dialog_main"
+        android:background="@drawable/login_gift_btn_cancel"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:scrollbarThumbVertical="@drawable/thumb_vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/contexTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/ddz_pay_point_record"
+            android:textColor="#ffde00" />
+
+        <RadioGroup
+            android:id="@+id/rGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rdoCurrentDay1"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:button="@drawable/radio_selector"
+                android:checked="true"
+                android:paddingLeft="15dp"
+                android:text="@string/ddz_pay_find_today" />
+
+            <RadioButton
+                android:id="@+id/rdoNear1"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:button="@drawable/radio_selector"
+                android:paddingLeft="15dp"
+                android:text="@string/ddz_pay_find_ten_days" />
+
+            <RadioButton
+                android:id="@+id/rdoMonth1"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_selector"
+                android:paddingLeft="15dp"
+                android:text="@string/ddz_pay_find_month" />
+
+            <TextView
+                android:id="@+id/tvMonth1"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:hint="@string/select_month"
+                android:paddingLeft="15dp"
+                android:textStyle="normal" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnQueryGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_orange"
+            android:textColor="@color/orange_btn_text_color"
+            android:clickable="true"
+            android:text="@string/inquire" />
+
+        <TextView
+            style="@style/contexTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/ddz_pay_point_record"
+            android:textColor="#ffde00" />
+
+        <RadioGroup
+            android:id="@+id/rGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rdoCurrentDay"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:button="@drawable/radio_selector"
+                android:checked="true"
+                android:paddingLeft="15dp"
+                android:text="@string/ddz_pay_find_today" />
+
+            <RadioButton
+                android:id="@+id/rdoNear"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:button="@drawable/radio_selector"
+                android:paddingLeft="15dp"
+                android:text="@string/ddz_pay_find_ten_days" />
+
+            <RadioButton
+                android:id="@+id/rdoMonth"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_selector"
+                android:paddingLeft="15dp"
+                android:text="@string/ddz_pay_find_month" />
+
+            <TextView
+                android:id="@+id/tvMonth2"
+                style="@style/contexTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:hint="@string/select_month"
+                android:paddingLeft="15dp"
+                android:textStyle="normal" >
+            </TextView>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnQueryGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_orange"
+            android:textColor="@color/orange_btn_text_color"
+            android:clickable="true"
+            android:text="@string/inquire" />
+    </LinearLayout>
+
+</ScrollView>

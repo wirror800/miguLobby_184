@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lobbyright_bg"
+    android:gravity="center_horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/frameTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/title_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/tvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/back_selector" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="意见反馈"
+            android:textColor="#063552"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/feedback_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/send_selector" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frameTitle"
+        android:layout_alignRight="@+id/note"
+        android:layout_marginTop="4dp"
+        android:textColor="#333333"
+        android:textSize="13sp" 
+        android:text="还可以输入140个字"/>
+
+    <EditText
+        android:id="@+id/note"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/textLimit"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="15dp"
+        android:capitalize="sentences"
+        android:cursorVisible="false"
+        android:fadingEdge="vertical"
+        android:gravity="top"
+        android:hint="@string/lobby_service_info"
+        android:maxLength="140"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:textColorHint="#333333"
+        android:textSize="15sp" />
+
+</RelativeLayout>

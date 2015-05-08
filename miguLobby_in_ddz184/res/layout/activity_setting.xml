@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lobbyright_bg"
+    android:gravity="center_horizontal" >
+
+    <FrameLayout
+        android:id="@+id/frameTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/title_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvBack"
+            style="@style/returnTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/back_selector"
+            android:clickable="true"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="@string/settingTitle"
+            android:textColor="#333333"
+            android:textSize="25sp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frameTitle" >
+
+        <RelativeLayout
+            android:id="@+id/relateContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/frameWifiUpdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/setting_whitebg" >
+
+                <RelativeLayout
+                    android:id="@+id/relateWifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/setting_selector"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/imgWifi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="1dp"
+                        android:src="@drawable/wifi_download" />
+
+                    <CheckBox
+                        android:id="@+id/cbWifi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/imgWifi"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/check_bg"
+                        android:button="@drawable/lobby_btn_check" />
+
+                    <TextView
+                        android:id="@+id/tvWifi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/cbWifi"
+                        android:layout_alignBottom="@+id/cbWifi"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/imgWifi"
+                        android:gravity="fill_vertical"
+                        android:text="Wi-Fi 接入自动更新"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imgSettingLine1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/relateWifi"
+                    android:background="@drawable/setting_line" />
+
+                <RelativeLayout
+                    android:id="@+id/relateSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/imgSettingLine1"
+                    android:background="@drawable/setting_selector"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/imgNotifiySound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/nofitify_sound" />
+
+                    <CheckBox
+                        android:id="@+id/cbNotifiySound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tvNotifiySound"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/imgNotifiySound"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/check_bg"
+                        android:button="@drawable/lobby_btn_check" />
+
+                    <TextView
+                        android:id="@+id/tvNotifiySound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/imgNotifiySound"
+                        android:gravity="fill_vertical"
+                        android:text="@string/notifiySound"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imgSettingLine2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/relateSound"
+                    android:background="@drawable/setting_line" />
+
+                <RelativeLayout
+                    android:id="@+id/relateVid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/imgSettingLine2"
+                    android:background="@drawable/setting_selector"
+                    android:clickable="true" >
+
+                    <CheckBox
+                        android:id="@+id/cbNotifiyVibrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/check_bg"
+                        android:button="@drawable/lobby_btn_check" />
+
+                    <ImageView
+                        android:id="@+id/imgNotifiyVid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignTop="@+id/cbNotifiyVibrate"
+                        android:src="@drawable/nofitify_sound" />
+
+                    <TextView
+                        android:id="@+id/tvNotifiyVibrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/cbNotifiyVibrate"
+                        android:layout_alignBottom="@+id/cbNotifiyVibrate"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/imgNotifiyVid"
+                        android:gravity="fill_vertical"
+                        android:text="@string/notifyVib"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frameAccout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/frameWifiUpdate"
+                android:layout_alignRight="@+id/frameWifiUpdate"
+                android:layout_below="@+id/frameWifiUpdate"
+                android:background="@drawable/setting_whitebg" >
+
+                <RelativeLayout
+                    android:id="@+id/relateAccout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/setting_selector"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/imgSwapAccout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="1dp"
+                        android:src="@drawable/swap_accout" />
+
+                    <TextView
+                        android:id="@+id/tvSwapAccout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/imgSwapAccout"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/imgSwapAccout"
+                        android:gravity="fill_vertical"
+                        android:text="@string/swapAccout"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imgSwapAccoutGoTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imgSwapAccout"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/imgSwapAccout"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/setting_goto" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imgSettingLine3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/relateAccout"
+                    android:background="@drawable/setting_line" />
+
+                <RelativeLayout
+                    android:id="@+id/relateChangePW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/imgSettingLine3"
+                    android:background="@drawable/setting_selector"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/imgChangePW"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="1dp"
+                        android:src="@drawable/change_pw" />
+
+                    <TextView
+                        android:id="@+id/tvChangePW"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/imgChangePW"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/imgChangePW"
+                        android:gravity="fill_vertical"
+                        android:text="@string/changePassword"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imgChangePWGoTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imgChangePW"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/imgChangePW"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/setting_goto" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frameAdvice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/frameWifiUpdate"
+                android:layout_alignRight="@id/frameWifiUpdate"
+                android:layout_below="@id/frameAccout"
+                android:background="@drawable/setting_whitebg" >
+
+                <RelativeLayout
+                    android:id="@+id/relateAdvice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/setting_selector"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/imgAdvice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="1dp"
+                        android:src="@drawable/advice" />
+
+                    <TextView
+                        android:id="@+id/tvAdvice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/imgAdvice"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/imgAdvice"
+                        android:gravity="fill_vertical"
+                        android:text="@string/feedback"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imgAdviceGoTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imgAdvice"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/imgAdvice"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/setting_goto" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/helpAdvice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/frameWifiUpdate"
+                android:layout_alignRight="@+id/frameWifiUpdate"
+                android:layout_below="@id/frameAdvice"
+                android:background="@drawable/setting_whitebg" >
+
+                <RelativeLayout
+                    android:id="@+id/relateHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/setting_selector"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/imgHelp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="1dp"
+                        android:src="@drawable/help" />
+
+                    <TextView
+                        android:id="@+id/tvHelp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/imgHelp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/imgHelp"
+                        android:gravity="fill_vertical"
+                        android:text="@string/help"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imgHelpGoTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imgHelp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/imgHelp"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/setting_goto" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cTop"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/ivtopleft"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_zone_top"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center" />
+
+    <!-- 人物头像 -->
+
+    <ImageView
+        android:id="@+id/user_face"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/img_face_bg"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:focusable="true"
+        android:padding="5dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_female_face" />
+
+    <RelativeLayout
+        android:id="@+id/rytouchview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/user_face"
+        android:layout_alignTop="@+id/user_face"
+        android:layout_toRightOf="@+id/user_face" >
+
+        <LinearLayout
+            android:id="@+id/lymsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 昵称，乐豆 -->
+
+            <TextView
+                android:id="@+id/tvuser_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_marginLeft="5dp"
+                android:padding="0dp"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:background="@drawable/bean_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvuser_bean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/bean"
+                    android:gravity="top"
+                    android:paddingLeft="2dp"
+                    android:textColor="#ffefa5"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/ivQuickBuyTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@anim/flash_anim"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/quick_buy_selector" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvuser_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                android:drawableLeft="@drawable/ticket"
+                android:paddingLeft="3.5dp"
+                android:textColor="#ffefa5"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/smallMoneyPkg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/lymsg"
+            android:background="@drawable/btn_small_money_package"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/new_btn_switch"
+        android:layout_width="@dimen/dropmenu_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="#00000000"
+        android:drawableRight="@drawable/new_btn_switch_drop"
+        android:paddingRight="2dp"
+        android:singleLine="true"
+        android:text="@string/ddz_yin_huafei_match"
+        android:textColor="#ffffffff"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/new_ic_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/ic_msg"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/new_ic_msg_newTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/new_ic_msg"
+        android:layout_alignTop="@id/new_ic_msg"
+        android:background="@drawable/new_tag"
+        android:contentDescription="@string/app_name" />
+    <!-- 登陆送 -->
+
+    <Button
+        android:id="@+id/login_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/new_ic_msg"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/new_ic_msg"
+        android:background="@drawable/btn_login_gift"
+        android:visibility="visible" />
+    <!-- 客服 -->
+
+    <ImageView
+        android:id="@+id/btnServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/login_gift"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/login_gift"
+        android:background="@drawable/btn_server_call"
+        android:clickable="true"
+        android:contentDescription="@string/app_name" />
+    <!-- 玩法切换 -->
+
+    <Button
+        android:id="@+id/playtype_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnServer"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/btnServer"
+        android:background="@drawable/btn_playtype_jingdian" />
+
+    <com.mykj.andr.ui.widget.CustomDigitalClock
+        android:id="@+id/digitalClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/new_ic_msg"
+        android:layout_below="@id/new_ic_msg"
+        android:layout_marginTop="7dp"
+        android:shadowColor="#ff01264f"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:singleLine="true"
+        android:textColor="#92a7b6"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvBroadcast"
+        style="@style/baseStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rytouchview"
+        android:layout_below="@id/rytouchview"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-5dp"
+        android:layout_toLeftOf="@id/digitalClock"
+        android:drawableLeft="@drawable/broadcast"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="#ffefa5"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/force_dialog_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:includeFontPadding="false"
+            android:paddingBottom="25dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="25dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:baselineAligned="false"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/dialogButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_orange"
+                android:text="@string/Cancel"
+                android:textColor="@color/orange_btn_text_color" />
+
+            <Button
+                android:id="@+id/btnConfir"
+                style="@style/dialogButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_orange"
+                android:text="@string/Ensure"
+                android:textColor="@color/orange_btn_text_color" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/btn_ridio"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/pay_btn_ridio"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_server_dail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp" >
+
+            <TextView
+                android:id="@+id/tv_server"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+
+            <ImageButton
+                android:id="@+id/iv_dial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/btn_dail_server" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/main_layout"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="-15dp"
+        android:layout_toRightOf="@id/main_layout"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/login_gift_btn_cancel" />
+
+</RelativeLayout>

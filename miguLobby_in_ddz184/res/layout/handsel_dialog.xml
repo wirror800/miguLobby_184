@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/force_dialog_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/common_top"
+        style="@style/dialogTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dialog_title_bg"
+        android:gravity="center"
+        android:text="@string/package_handsel_daoju" />
+
+    <RelativeLayout
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp" >
+
+        <TextView
+            android:id="@+id/handsel_text"
+            style="@style/smallTextStyle"
+            android:layout_width="389dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp" />
+
+        <RelativeLayout
+            android:id="@+id/handsel_rel_1st"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/handsel_text"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="3dp" >
+
+            <TextView
+                android:id="@+id/password_label1"
+                style="@style/smallTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="@string/package_handsel_id" />
+
+            <EditText
+                android:id="@+id/et1_handsel"
+                style="@style/CenterEditStyle"
+                android:layout_width="150dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/password_label1"
+                android:imeOptions="actionNext"
+                android:maxLength="15"
+                android:numeric="integer" />
+
+            <ImageView
+                android:id="@+id/down_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/et1_handsel"
+                android:layout_centerVertical="true"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="3dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/handsel_down_arrow" />
+
+            <ImageView
+                android:id="@+id/error1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/et1_handsel"
+                android:paddingLeft="5dp"
+                android:src="@drawable/error"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/right1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/et1_handsel"
+                android:paddingLeft="5dp"
+                android:src="@drawable/right"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/handsel_error"
+            style="@style/smallTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/handsel_rel_1st"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-2dp"
+            android:text="@string/package_handsel_id_error"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/handsel_rel_2nd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/handsel_error"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="3dp" >
+
+            <TextView
+                android:id="@+id/password_label2"
+                style="@style/smallTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="@string/package_handsel_input_id_again" />
+
+            <EditText
+                android:id="@+id/et2_handsel"
+                style="@style/CenterEditStyle"
+                android:layout_width="150dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/password_label2"
+                android:maxLength="15"
+                android:numeric="integer" />
+
+            <ImageView
+                android:id="@+id/error2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/et2_handsel"
+                android:paddingLeft="5dp"
+                android:src="@drawable/error"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/right2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/et2_handsel"
+                android:paddingLeft="5dp"
+                android:src="@drawable/right"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/handsel_error1"
+            style="@style/smallTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/handsel_rel_2nd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:text="@string/package_handsel_input_id_again_error"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/handsel_rel_3nd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/handsel_error1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="3dp" >
+
+            <TextView
+                android:id="@+id/hansel_num_label1"
+                style="@style/smallTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="@string/package_handsel_count" />
+
+            <EditText
+                android:id="@+id/et_handsel_num"
+                style="@style/CenterEditStyle"
+                android:layout_width="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/hansel_num_label1"
+                android:maxLength="10"
+                android:numeric="integer" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/dialogButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/tab_btn_blue_selector"
+            android:text="@string/Cancel" 
+            android:textColor="@color/blue_btn_text_color"/>
+
+        <Button
+            android:id="@+id/btnConfir"
+            style="@style/dialogButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/btn_orange"
+            android:textColor="@color/orange_btn_text_color"
+            android:text="@string/Ensure" />
+    </LinearLayout>
+
+</LinearLayout>

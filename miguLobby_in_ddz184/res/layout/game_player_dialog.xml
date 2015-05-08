@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480dp"
+    android:layout_height="wrap_content" >
+    
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" 
+        >
+
+        <RelativeLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/game_player_bg" >
+            <RelativeLayout
+                android:id="@+id/logpop_reward_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <LinearLayout
+                    android:id="@+id/jiangli_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:baselineAligned="false"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/game_player_top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp" >
+
+                        <TextView
+                            android:id="@+id/game_player_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/game_player_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:layout_toRightOf="@id/game_player_title"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/game_player_dingou"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/btn_game_player_dingou" />
+
+                        <!-- <TextView
+                            android:layout_width="14dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/game_player_dingou" /> -->
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/game_player_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:id="@+id/game_player_info"
+                            android:layout_width="380dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_vertical">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/game_player_dingou1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/btn_game_player_dingou_bt" />
+                
+                <Button
+                    android:id="@+id/game_player_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/btn_game_player_get"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/game_player_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mainLayout"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/game_player_title"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/ivCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@id/mainLayout"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/login_gift_btn_cancel"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

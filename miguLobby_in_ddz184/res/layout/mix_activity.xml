@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_common"
+    android:orientation="vertical" >
+
+    <!-- title头部 -->
+
+    <include layout="@layout/common_title_layout" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/bg_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/prop_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mix_material"
+                android:layout_marginBottom="8dp" >
+
+                <ImageView
+                    android:id="@+id/mix_prop_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/unknown"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/mix_prop_name"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/mix_prop_img"
+                    android:text="@string/package_daoju_name"
+                    android:textColor="#fffa00" />
+
+                <TextView
+                    android:id="@+id/mix_prop_desc"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/mix_prop_name"
+                    android:layout_below="@+id/mix_prop_name"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/package_daoju_info" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/mix_divider_1st"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/prop_desc"
+                android:layout_alignRight="@+id/prop_desc"
+                android:layout_below="@+id/prop_desc"
+                android:background="@drawable/list_divider" />
+
+            <RelativeLayout
+                android:id="@+id/mix_material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mix_divider_1st"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp" >
+
+                <TextView
+                    android:id="@+id/mix_label"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/package_daoju_hecheng_cailiao" />
+
+                <LinearLayout
+                    android:id="@+id/mix_material_list"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/mix_label" >
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/gift_1st"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/mix_label"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:id="@+id/gift_1st_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/dj_sbjf2" />
+
+                    <TextView
+                        android:id="@+id/prop_1st_name"
+                        style="@style/smallTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gift_1st_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/package_daoju_name"
+                        android:textColor="#fffa00" />
+
+                    <TextView
+                        style="@style/smallTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/prop_1st_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="0dp"
+                        android:text="0/10" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/gift_2nd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/gift_1st"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:id="@+id/gift_2nd_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/dj_sbjf2" />
+
+                    <TextView
+                        android:id="@+id/prop_2nd_name"
+                        style="@style/smallTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gift_2nd_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/package_daoju_name"
+                        android:textColor="#fffa00" />
+
+                    <TextView
+                        style="@style/smallTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/prop_2nd_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="0dp"
+                        android:text="0/10" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/gift_3rd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/gift_2nd"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:id="@+id/gift_3rd_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/dj_sbjf2" />
+
+                    <TextView
+                        android:id="@+id/prop_3rd_name"
+                        style="@style/smallTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gift_3rd_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/package_daoju_name"
+                        android:textColor="#fffa00" />
+
+                    <TextView
+                        style="@style/smallTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/prop_3rd_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="0dp"
+                        android:text="0/10" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/gift_4th"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/gift_3rd"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:id="@+id/gift_4th_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/dj_sbjf2" />
+
+                    <TextView
+                        android:id="@+id/prop_4th_name"
+                        style="@style/smallTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gift_4th_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/package_daoju_name"
+                        android:textColor="#fffa00" />
+
+                    <TextView
+                        style="@style/smallTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/prop_4th_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="0dp"
+                        android:text="0/10" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/gift_5th"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/gift_4th"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:id="@+id/gift_5th_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/dj_sbjf2" />
+
+                    <TextView
+                        android:id="@+id/prop_5th_name"
+                        style="@style/smallTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gift_5th_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/package_daoju_name"
+                        android:textColor="#fffa00" />
+
+                    <TextView
+                        style="@style/smallTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/prop_5th_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="0dp"
+                        android:text="0/10" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/mix_divider_2nd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mix_material"
+                android:layout_alignRight="@+id/mix_material"
+                android:layout_below="@+id/mix_material"
+                android:background="@drawable/list_divider"
+                android:contentDescription="@string/app_name" />
+
+            <RelativeLayout
+                android:id="@+id/mix_num_rel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mix_material"
+                android:layout_below="@+id/mix_divider_2nd"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/mix_num_label"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/package_daoju_hecheng_count" />
+
+                <Button
+                    android:id="@+id/btnReduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/mix_num_label"
+                    android:background="@drawable/btn_arrow_reduce" />
+
+                <TextView
+                    android:id="@+id/tvMixNum"
+                    style="@style/contexTextStyle"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/btnReduce"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#fffa00" />
+
+                <Button
+                    android:id="@+id/btnIncrease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="32dp"
+                    android:layout_toRightOf="@id/btnReduce"
+                    android:background="@drawable/btn_arrow_increase" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mix_fee_rel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mix_num_rel"
+                android:layout_below="@+id/mix_num_rel"
+                android:layout_marginTop="2dp" >
+
+                <TextView
+                    android:id="@+id/mix_cost_label"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/package_daoju_hecheng_feiyong" />
+
+                <TextView
+                    android:id="@+id/mix_cost"
+                    style="@style/contexTextStyle"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/mix_cost_label"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="#fffa00" />
+
+                <TextView
+                    android:id="@+id/mix_bean_label"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toRightOf="@+id/mix_cost"
+                    android:text="@string/lucky_ledou_2"
+                    android:textColor="#fffa00" />
+
+                <TextView
+                    android:id="@+id/mix_precent_label"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/mix_bean_label"
+                    android:text="@string/package_daoju_hecheng_chenggonglu" />
+
+                <TextView
+                    android:id="@+id/mix_precent"
+                    style="@style/contexTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/mix_precent_label"
+                    android:text="75%"
+                    android:textColor="#fffa00" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_mix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mix_fee_rel"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/mix_fee_rel"
+                android:background="@drawable/btn_orange"
+                android:textColor="@color/orange_btn_text_color"
+                android:text="@string/mix" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/contexTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/balance_point" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/light_bg" >
+
+        <TextView
+            android:id="@+id/tvPointBalance"
+            style="@style/contexTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnQueryBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inquire"
+        android:contentDescription="@string/app_name"
+        android:background="@drawable/btn_orange"
+        android:textColor="@color/orange_btn_text_color"
+        android:clickable="true" />
+
+</LinearLayout>

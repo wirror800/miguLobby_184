@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_common"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="-5dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/bg_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:id="@+id/textTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="1.4"
+            android:textColor="#ffffffff"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/divider"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textTest"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/divider" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/divider"
+            android:layout_marginTop="10dp"
+            android:fadingEdge="vertical"
+            android:scrollbars="vertical" >
+
+            <TextView
+                android:id="@+id/verInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.4"
+                android:textColor="#ffffffff"
+                android:textSize="13sp" />
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>
