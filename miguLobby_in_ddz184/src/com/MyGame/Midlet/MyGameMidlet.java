@@ -291,9 +291,11 @@ public class MyGameMidlet extends Activity implements OnClickListener {
 		bindService(intent, serviceConnection, Context.BIND_AUTO_CREATE);
 
 		initViews();
-		if (getMIGUChecked()) {
+		
+		/*if (getMIGUChecked()) {
 			showMIGUDialog();
-		}
+		}*/
+		
 		checkUpgrade(this, 0, mGameVersionHandler);
 		AccountManager.getInstance().quickEntrance(mLoginCallBack);
 		showProgressBar();
