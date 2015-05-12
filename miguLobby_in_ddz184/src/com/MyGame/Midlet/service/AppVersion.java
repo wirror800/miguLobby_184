@@ -170,6 +170,27 @@ public class AppVersion {
 					new Thread() {
 						@Override
 						public void run() {
+							InputStream is = null;
+							try {
+								is = mContext.getAssets().open(
+										packageName + ".apk");
+							} catch (IOException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+							if (is != null) {
+								File filepath = new File(
+										Configs.getSdcardPath()
+												+ AppConfig.APKS_PATH,
+										packageName + ".apk");
+								if (!filepath.exists()) {
+									File parent = filepath.getParentFile();
+									parent.mkdirs();
+									copyApkFromAssets(is, filepath);
+
+								}
+							}
+
 							// iconDrawable=Configs.downloadImgBitmap(iconUrl,iconFile,mContext);
 							if (Configs.downloadImgBitmap(iconUrl, iconFiletmp)) {
 								iconFiletmp.renameTo(iconFile);
@@ -177,6 +198,7 @@ public class AppVersion {
 										mContext, iconFile,
 										DisplayMetrics.DENSITY_HIGH);
 							}
+
 						}
 					}.start();
 				}
@@ -330,6 +352,32 @@ public class AppVersion {
 				}
 			} else {
 				isDownloadFinished = false;
+			}
+		}
+
+		if (!isDownloadFinished) {
+			InputStream is = null;
+			try {
+				is = mContext.getAssets().open(packageName + ".apk");
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			if (is != null) {
+				File filepath = new File(Configs.getSdcardPath()
+						+ AppConfig.APKS_PATH, packageName + ".apk");
+				if (!filepath.exists()) {
+					File parent = filepath.getParentFile();
+					parent.mkdirs();
+
+					isDownloadFinished = copyApkFromAssets(is, filepath);
+					if (isDownloadFinished) {
+						apkFilePath = filepath.getPath();
+					}
+				} else {
+					apkFilePath = filepath.getPath();
+					isDownloadFinished = true;
+				}
 			}
 		}
 		return isDownloadFinished;
@@ -547,26 +595,26 @@ public class AppVersion {
 		return sb.toString();
 	}
 
-	public boolean copyApkFromAssets(Context context, String fileName,
-			String path) {
-		boolean copyIsFinish = false;
-		try {
-			InputStream is = context.getAssets().open(fileName);
-			File file = new File(path);
-			file.createNewFile();
-			FileOutputStream fos = new FileOutputStream(file);
-			byte[] temp = new byte[1024];
-			int i = 0;
-			while ((i = is.read(temp)) > 0) {
-				fos.write(temp, 0, i);
+	private boolean copyApkFromAssets(InputStream is, File file) {
+		synchronized (file) {
+			boolean copyIsFinish = false;
+			try {
+				file.createNewFile();
+				FileOutputStream fos = new FileOutputStream(file);
+				byte[] temp = new byte[1024];
+				int i = 0;
+				while ((i = is.read(temp)) > 0) {
+					fos.write(temp, 0, i);
+				}
+				fos.close();
+				is.close();
+				copyIsFinish = true;
+			} catch (IOException e) {
+				e.printStackTrace();
 			}
-			fos.close();
-			is.close();
-			copyIsFinish = true;
-		} catch (IOException e) {
-			e.printStackTrace();
+			return copyIsFinish;
 		}
-		return copyIsFinish;
+
 	}
 
 }
