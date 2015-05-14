@@ -68,48 +68,55 @@ public class GameInfoActivity extends Activity{
 			switch (msg.what) {
 			//获取服务器游戏详情信息成功
 			case 1: {
-				AppVersion gameItem=(AppVersion) mGamesList.get(position); //游戏类结果
+				if (mGamesList != null && position <= mGamesList.size() - 1) {
+					AppVersion gameItem = (AppVersion) mGamesList.get(position); // 游戏类结果
 
-//				String onlineurl=gameItem.getOnLineUrl();			
-//				GetOnlineTask task = new GetOnlineTask();  
-//				task.execute(onlineurl);  //获取在线人数
-				
-				tvOnlineNum.setText(gameItem.getOnLineNum());
-				String gameinfo_url=AppConfig.GAMEINFO_URL+"gameid="+mGameId;
-				mService.serviceHttpGetGameInfo(gameinfo_url,downloadHandler);//获取游戏详情图片 , //暂未提供URL
+					// String onlineurl=gameItem.getOnLineUrl();
+					// GetOnlineTask task = new GetOnlineTask();
+					// task.execute(onlineurl); //获取在线人数
 
+					tvOnlineNum.setText(gameItem.getOnLineNum());
+					String gameinfo_url = AppConfig.GAMEINFO_URL + "gameid="
+							+ mGameId;
+					mService.serviceHttpGetGameInfo(gameinfo_url,
+							downloadHandler);// 获取游戏详情图片 , //暂未提供URL
 
-				if(gameItem.isAppInstalled()){
-					btnGameDownLoad.setText("运行");
-					btnGameDownLoad.setBackgroundResource(R.drawable.yellow_selector);
-					//运行				
-				}else if(gameItem.isUpdateComplete()){
-					btnGameDownLoad.setText("安装");
-					btnGameDownLoad.setBackgroundResource(R.drawable.yellow_selector);
-					//安装
-				}else{
-					btnGameDownLoad.setTextColor(Color.WHITE);
-					btnGameDownLoad.setText("下载");
-					btnGameDownLoad.setBackgroundResource(R.drawable.green_selector);
+					if (gameItem.isAppInstalled()) {
+						btnGameDownLoad.setText("运行");
+						btnGameDownLoad
+								.setBackgroundResource(R.drawable.yellow_selector);
+						// 运行
+					} else if (gameItem.isUpdateComplete()) {
+						btnGameDownLoad.setText("安装");
+						btnGameDownLoad
+								.setBackgroundResource(R.drawable.yellow_selector);
+						// 安装
+					} else {
+						btnGameDownLoad.setTextColor(Color.WHITE);
+						btnGameDownLoad.setText("下载");
+						btnGameDownLoad
+								.setBackgroundResource(R.drawable.green_selector);
+					}
+					btnGameDownLoad
+							.setOnClickListener(new btnOnClickListener());
+					String gametitle = gameItem.getGameName();
+					Drawable gameicon = gameItem.getGameIcon();
+					String gamename = gameItem.getGameName();
+					String gamesize = gameItem.getApkSize();
+
+					long size = Long.parseLong(gamesize);
+					float ft = ((float) size) / (1024 * 1024);
+					int scale = 2;// 设置位数
+					int roundingMode = 4;// 表示四舍五入，可以选择其他舍值方式，例如去尾，等等.
+					BigDecimal bd = new BigDecimal((double) ft);
+					bd = bd.setScale(scale, roundingMode);
+					ft = bd.floatValue();
+
+					tvTitle.setText(gametitle);
+					imgGameIcon.setImageDrawable(gameicon);
+					tvGameName.setText(gamename);
+					tvSizeNum.setText(ft + "M");
 				}
-				btnGameDownLoad.setOnClickListener(new btnOnClickListener());
-				String gametitle=gameItem.getGameName();
-				Drawable gameicon=gameItem.getGameIcon();
-				String gamename=gameItem.getGameName();
-				String gamesize=gameItem.getApkSize();            
-
-				long size=Long.parseLong(gamesize);		
-				float ft=((float)size)/(1024*1024);
-				int scale = 2;//设置位数 
-				int roundingMode = 4;//表示四舍五入，可以选择其他舍值方式，例如去尾，等等. 
-				BigDecimal bd = new BigDecimal((double)ft); 
-				bd = bd.setScale(scale,roundingMode); 
-				ft = bd.floatValue();
-
-				tvTitle.setText(gametitle);
-				imgGameIcon.setImageDrawable(gameicon);
-				tvGameName.setText(gamename);
-				tvSizeNum.setText(ft+"M");
 
 			}
 			break;

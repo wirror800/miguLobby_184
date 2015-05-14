@@ -968,17 +968,23 @@ public class MyGameMidlet extends Activity implements OnClickListener {
 	 * @param cur
 	 */
 	private void changePointView(int cur) {
-		LinearLayout pointLinear = (LinearLayout) findViewById(R.id.gallery_point_linear);
+		if (pointLinear != null) {
+			for (int i = 0; i < sumOfDrawble; i++) {
+				// View view = pointLinear.getChildAt(i);
+				ImageView pointView = (ImageView) pointLinear.getChildAt(i);
+				if (pointView != null) {
+					if (i == cur) {
+						pointView
+								.setBackgroundResource(R.drawable.feature_point_cur);
+					} else {
+						pointView
+								.setBackgroundResource(R.drawable.feature_point);
+					}
+				}
 
-		for (int i = 0; i < sumOfDrawble; i++) {
-			// View view = pointLinear.getChildAt(i);
-			ImageView pointView = (ImageView) pointLinear.getChildAt(i);
-			if (i == cur) {
-				pointView.setBackgroundResource(R.drawable.feature_point_cur);
-			} else {
-				pointView.setBackgroundResource(R.drawable.feature_point);
 			}
 		}
+
 	}
 
 	/**
