@@ -1615,8 +1615,7 @@ public class CardZoneFragment extends FragmentModel implements OnClickListener {
 				AppConfig.setVersionInfo(vi);
 				String versionName = null;
 				try {
-					versionName = mAct.getPackageManager().getPackageInfo(
-							mAct.getPackageName(), 0).versionName;
+					versionName = Util.getVersionName(mAct);
 					if(vi._upgrade == VersionInfo.UPGRADE_NONE){
 						tvVersion.setText(versionName);
 					}else if(isNewestVersionExist(vi)){
@@ -1632,7 +1631,7 @@ public class CardZoneFragment extends FragmentModel implements OnClickListener {
 							}
 						});
 					}
-				} catch (NameNotFoundException e) {
+				} catch (Exception e) {
 					e.printStackTrace();
 				}
 				doUpdate(vi);
