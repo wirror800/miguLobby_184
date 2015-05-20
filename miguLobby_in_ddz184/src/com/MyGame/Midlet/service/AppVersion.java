@@ -288,11 +288,12 @@ public class AppVersion {
 
 	public String getGameName() {
 		// chenqy客户端强行修改应用名称 @2015-05-06
-		String gameName = descName.replaceAll("赢话费", "咪咕");
+		/*String gameName = descName.replaceAll("赢话费", "咪咕");
 		if (!gameName.startsWith("咪咕")) {
 			gameName = "咪咕" + gameName;
 		}
-		return gameName;
+		return gameName;*/
+		return descName;
 	}
 
 	public String getDownFileConfigMD5() {

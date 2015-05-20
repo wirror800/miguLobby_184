@@ -1,4 +1,4 @@
-package com.mykj.game.ddz.wxapi;
+package com.MyGame.Midlet.wxapi;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

@@ -1,4 +1,4 @@
-package com.mykj.game.ddz.wxapi;
+package com.MyGame.Midlet.wxapi;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

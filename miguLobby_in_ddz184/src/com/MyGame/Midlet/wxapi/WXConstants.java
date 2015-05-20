@@ -1,4 +1,4 @@
-package com.mykj.game.ddz.wxapi;
+package com.MyGame.Midlet.wxapi;
 
 public class WXConstants {
 	// APP_ID 替换为你的应用从官方网站申请到的合法appId

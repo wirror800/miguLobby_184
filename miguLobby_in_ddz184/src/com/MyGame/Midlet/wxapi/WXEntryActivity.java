@@ -1,4 +1,6 @@
-package com.mykj.game.ddz.wxapi;
+package com.MyGame.Midlet.wxapi;
+
+import org.cocos2dx.lib.Cocos2dxActivity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -82,10 +84,12 @@ public class WXEntryActivity extends Activity implements IWXAPIEventHandler {
 			public void onClick(View v) {
 
 				if (!Util.isEmptyStr(AppConfig.spKey) && api.isWXAppInstalled()) {
-					SendMessageToWX.Req req = initializeWX(title, description,
+					Toast.makeText(WXEntryActivity.this, 
+							"对不起分享功能暂时无法使用", Toast.LENGTH_SHORT).show();
+					/*SendMessageToWX.Req req = initializeWX(title, description,
 							resId);
 					req.scene = SendMessageToWX.Req.WXSceneSession;
-					api.sendReq(req);
+					api.sendReq(req);*/
 				} else {
 					if (!api.isWXAppInstalled()) {
 						Toast.makeText(context,

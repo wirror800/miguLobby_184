@@ -15,9 +15,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.MyGame.Midlet.R;
+import com.MyGame.Midlet.wxapi.WXEntryActivity;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 import com.mykj.game.ddz.api.UC;
-import com.mykj.game.ddz.wxapi.WXEntryActivity;
 import com.mykj.game.moregame.MoregameActivity;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.Toast;

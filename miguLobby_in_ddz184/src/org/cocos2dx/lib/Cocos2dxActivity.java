@@ -50,7 +50,7 @@ import android.view.WindowManager;
 import com.mykj.andr.ui.MMVideoBuyDialog;
 import com.mykj.game.FiexedViewHelper;
 import com.MyGame.Midlet.R;
-import com.mykj.game.ddz.wxapi.WXEntryActivity;
+import com.MyGame.Midlet.wxapi.WXEntryActivity;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.HalfWebDialog;
 import com.mykj.game.utils.Log;
@@ -123,7 +123,7 @@ public class Cocos2dxActivity extends FragmentActivity {
 							true,AppConfig.isConfirmon,AppConfig.ACTION_RO0M);  //3代表  房间【＋】
 					break;
 				case HANDLER_WEIXIN_SHARE:
-					Bundle bundle=msg.getData();
+					/*Bundle bundle=msg.getData();
 					String title=bundle.getString("wx_title");
 					String description=bundle.getString("wx_description");
 					int resId=bundle.getInt("wx_thumb");
@@ -132,7 +132,9 @@ public class Cocos2dxActivity extends FragmentActivity {
 					intent.putExtra("wx_title", title);
 					intent.putExtra("wx_description", description);
 					intent.putExtra("wx_thumb", resId);
-					startActivity(intent);
+					startActivity(intent);*/
+					Toast.makeText(Cocos2dxActivity.this, 
+							"对不起分享功能暂时无法使用", Toast.LENGTH_SHORT).show();
 					break;
 				case HANDLER_HIDE_BG:
 					FiexedViewHelper.getInstance().removeCococs2dLoading();
