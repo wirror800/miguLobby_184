@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_marginRight="17dp"
+        android:visibility="gone"
         android:background="@anim/btn_freebean_anim"
         android:clickable="true"
         android:contentDescription="@string/app_name" />

@@ -12,12 +12,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#00000000"
+        android:visibility="gone"
         android:contentDescription="@string/app_name"
         android:src="@drawable/pop_share" />
 
     <ImageView
         android:id="@+id/iv_div_1"
         style="@style/popDividerStyle"
+        android:visibility="gone"
         android:contentDescription="@string/app_name" />
 
     <ImageButton
@@ -117,6 +119,7 @@
         android:id="@+id/ib_more_switch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:background="#00000000"
         android:contentDescription="@string/app_name"
         android:src="@drawable/pop_switch" />

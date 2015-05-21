@@ -38,16 +38,17 @@
 
         <LinearLayout
             android:id="@+id/lyimages"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
             android:paddingLeft="20dip"
             android:paddingRight="20dip" >
 
             <ImageView
                 android:id="@+id/img_quick_buy"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="wrap_content"             
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:src="@drawable/tab_quick_buy_selector" />
@@ -55,7 +56,7 @@
             <View
                 android:layout_width="90dp"
                 android:layout_height="1dp"
-                android:visibility="invisible" />
+                android:visibility="gone" />
 
             <ImageView
                 android:id="@+id/img_more_games"
@@ -63,6 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:clickable="true"
+                android:visibility="gone"
                 android:src="@drawable/tab_more_game_selector" />
         </LinearLayout>
         
