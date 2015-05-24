@@ -1515,14 +1515,14 @@ public class PayManager {
 		StringBuffer sb = new StringBuffer();
 
 		if (!isPayAgain) {
-			//sb.append(PAY_SIGN_MOBILE).append(",");// 移动短信支付
-			//sb.append(PAY_SIGN_MOBILE_WAP).append(",");// cmwap支付
-			//sb.append(PAY_SIGN_MOBILE_MM).append(",");// 移动MM支付
+			sb.append(PAY_SIGN_MOBILE).append(",");// 移动短信支付
+			sb.append(PAY_SIGN_MOBILE_WAP).append(",");// cmwap支付
+			sb.append(PAY_SIGN_MOBILE_MM).append(",");// 移动MM支付
 			//sb.append(PAY_SIGN_UNICOM_UNIPAY).append(",");// 联通支付
-			//sb.append(PAY_SIGN_UNICOM_SMS).append(",");// 联通短信支付
-			//sb.append(PAY_SIGN_TELECOM).append(",");// 电信支付
-			//sb.append(PAY_SIGN_TELECOM_EGAME).append(",");//电信爱游戏
-			//sb.append(PAY_SIGN_WX_SDK).append(",");// 微信支付
+			sb.append(PAY_SIGN_UNICOM_SMS).append(",");// 联通短信支付
+			sb.append(PAY_SIGN_TELECOM).append(",");// 电信支付
+			sb.append(PAY_SIGN_TELECOM_EGAME).append(",");//电信爱游戏
+			sb.append(PAY_SIGN_WX_SDK).append(",");// 微信支付
 			//sb.append(PAY_SIGN_SKYMOBILE).append(",");// 斯凯SDK支付
 			//if (AppConfig.isOpenPayByCmccSdk()) {
 			sb.append(PAY_SIGN_MOBILE_SDK).append(",");// 移动SDK支付
@@ -1541,13 +1541,13 @@ public class PayManager {
 	 */
 	public static String getSigntype() {
 		StringBuffer sb = new StringBuffer();
-		//sb.append(PAY_SIGN_MOBILE).append(",");// 移动短信支付
-		//sb.append(PAY_SIGN_MOBILE_WAP).append(",");// cmwap支付
-		//sb.append(PAY_SIGN_MOBILE_MM).append(",");// 移动MM支付
+		sb.append(PAY_SIGN_MOBILE).append(",");// 移动短信支付
+		sb.append(PAY_SIGN_MOBILE_WAP).append(",");// cmwap支付
+		sb.append(PAY_SIGN_MOBILE_MM).append(",");// 移动MM支付
 		//sb.append(PAY_SIGN_UNICOM_UNIPAY).append(",");// 联通支付
-		//sb.append(PAY_SIGN_UNICOM_SMS).append(",");// 联通短信支付
-		//sb.append(PAY_SIGN_TELECOM).append(",");// 电信支付
-		//sb.append(PAY_SIGN_TELECOM_EGAME).append(",");//电信爱游戏
+		sb.append(PAY_SIGN_UNICOM_SMS).append(",");// 联通短信支付
+		sb.append(PAY_SIGN_TELECOM).append(",");// 电信支付
+		sb.append(PAY_SIGN_TELECOM_EGAME).append(",");//电信爱游戏
 		//if (AppConfig.isOpenPayByCmccSdk()) {
 		sb.append(PAY_SIGN_MOBILE_SDK).append(",");// 移动SDK支付
 		//}
