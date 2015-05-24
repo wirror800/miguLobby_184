@@ -77,7 +77,9 @@ import com.mingyou.login.LoginSocket;
 import com.mingyou.login.SocketLoginListener;
 import com.mingyou.login.struc.DownLoadListener;
 import com.mingyou.login.struc.VersionInfo;
+import com.mykj.andr.thirdlogin.ThirdLoginStart;
 import com.mykj.comm.log.MLog;
+import com.mykj.game.utils.UtilHelper;
 
 public class MyGameMidlet extends Activity implements OnClickListener {
 	private static final String TAG = "MyGameMidlet";
@@ -301,27 +303,29 @@ public class MyGameMidlet extends Activity implements OnClickListener {
 		showProgressBar();
 		setBootWatchdog(9000); // 9秒后启动后台server定时器
 
-//		String gameName = getResources().getString(R.string.app_name);
-//		String provider = "深圳名游网络科技有限公司";
-//		String serviceTel = "400777996";
-//		// 登陆流水号，CP自定义，可不填
-//		String loginNo = "0123456789012345";
-//		// 初始化SDK，并完成自动登陆,返回移动用户UID
-//		GameInterface.initializeApp(this, gameName, provider, serviceTel, null,
-//				new GameInterface.ILoginCallback() {
-//					@Override
-//					public void onResult(int result, String userId, Object o) {
-//						if (result == LoginResult.SUCCESS_EXPLICIT
-//								|| result == LoginResult.SUCCESS_IMPLICIT) {
-//							Toast.makeText(mContext, "登陆成功!",
-//									Toast.LENGTH_SHORT).show();
-//						} else {
-//							Toast.makeText(mContext, "登陆失败!",
-//									Toast.LENGTH_SHORT).show();
-//						}
-//					}
-//				});
-		GameInterface.initializeApp(this);
+		isFirst=true;
+		GameInterface.initializeApp(this, "", null, null, null,
+				new GameInterface.ILoginCallback() {
+					@Override
+					public void onResult(int resultCode, String userId,
+							Object ogj) {
+
+						if (LoginResult.SUCCESS_EXPLICIT == resultCode) {
+							ThirdLoginStart.getInstance(mContext).init(mLoginCallBack);
+							ThirdLoginStart.getInstance(mContext).getTokenUrl(userId);
+							// 用户登录成功的游戏业务逻辑代码
+						} else if (LoginResult.FAILED_EXPLICIT == resultCode) {
+							// 用户登录失败的游戏业务逻辑代码
+						} else if (LoginResult.SUCCESS_IMPLICIT == resultCode) {
+							ThirdLoginStart.getInstance(mContext).init(mLoginCallBack);
+							ThirdLoginStart.getInstance(mContext).getTokenUrl(userId);
+						} else {
+							// 用户取消登录的游戏业务逻辑代码
+						}
+					}
+
+				});
+	
 	}
 
 	/**
@@ -848,20 +852,27 @@ public class MyGameMidlet extends Activity implements OnClickListener {
 		autoGalleryHandler.sendMessageDelayed(msg, 5000);
 	}
 
+	
+	private boolean isFirst=true;
 	@Override
 	protected void onResume() {
 		super.onResume();
+
 		// 判断是否已经有账号登陆
-		boolean isHasNewAccInfo = AccountManager.isAddNewAccount();
-		if (isHasNewAccInfo) {
-			AccountManager.getInstance().quickEntrance(mLoginCallBack);
-		} else if (!AccountManager.reIsHasAccountInfo()) {// 帐号全部删除注销界面
-			updataUIByLoginState(STATE_NOLOGIN);
+		if (UtilHelper.getMobileCardType(mContext)!= UtilHelper.MOVE_MOBILE_TYPE
+				|| !isFirst ) {
+			boolean isHasNewAccInfo = AccountManager.isAddNewAccount();
+			if (isHasNewAccInfo) {
+				AccountManager.getInstance().quickEntrance(mLoginCallBack);
+			} else if (!AccountManager.reIsHasAccountInfo()) {// 帐号全部删除注销界面
+				updataUIByLoginState(STATE_NOLOGIN);
+			}
 		}
 
 		Message msg = adapterHandler.obtainMessage();
 		msg.what = UPDATA_USERSHOW;
 		adapterHandler.sendMessage(msg);
+		isFirst = false;
 	}
 
 	/**
