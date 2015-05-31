@@ -27,6 +27,7 @@ import com.MyGame.Midlet.R;
 import com.MyGame.Midlet.util.AppConfig;
 import com.MyGame.Midlet.util.Configs;
 import com.login.view.LoginView;
+import com.mykj.andr.thirdlogin.ThirdLoginStart;
 
 public class AppVersion {
 	private static final String TAG = "AppVersion";
@@ -491,6 +492,11 @@ public class AppVersion {
 		bundle.putString("CHILD_CHANNEL_ID", AppConfig.childChannelId);
 		bundle.putBoolean("NEWLOBBY", true);
 
+		String token = Configs.getStringSharedPreferences(mContext,
+				ThirdLoginStart.token_key, "");
+		bundle.putString("TOKEN", token);
+		
+		
 		String pkgName = null;
 		String startAct = null;
 		String ver = getAppVer(mContext, packageName);

@@ -9,6 +9,7 @@ import android.content.Context;
 import android.util.Log;
 
 import com.MyGame.Midlet.util.AppConfig;
+import com.MyGame.Midlet.util.Configs;
 import com.MyGame.Midlet.util.HttpUtil;
 import com.MyGame.Midlet.util.IGetRequest;
 import com.MyGame.Midlet.util.Util;
@@ -21,10 +22,13 @@ import com.mykj.game.utils.CenterUrlHelper;
 public class ThirdLoginStart {
 
 	private static final String TAG = ThirdLoginStart.class.getSimpleName();
+	
+	public static final String token_key="CMCC_TOKEN";
+	
 	// 第三方获取ip和port
 	private static final String trdUrl = "http://qpwap.cmgame.com/get_third_entry.php";
 
-	private Context mcontext;
+	private Context mContext;
 	
 	private static ThirdLoginStart instance = null;
 	
@@ -47,7 +51,7 @@ public class ThirdLoginStart {
 
 
 	private ThirdLoginStart(Context context) {
-		mcontext = context;
+		mContext = context;
 	}
 
 	/**
@@ -86,6 +90,7 @@ public class ThirdLoginStart {
 					// 对于需要绑定的第三方账号绑定成功则写成功标志，下一次则不用再绑定
 					String token = getTagStr(xmlStr, "token");
 
+					Configs.setStringSharedPreferences(mContext, token_key, token);
 					AccountItem item = new AccountItem(null, null, token,
 							AccountItem.ACC_TYPE_THIRD, 0, null, null);
 					

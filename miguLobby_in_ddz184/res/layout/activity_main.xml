@@ -140,6 +140,7 @@
                 android:background="@drawable/quicklogin_selector"
                 android:clickable="true"
                 android:gravity="center"
+                android:visibility="gone"
                 android:text="@string/fastlogin"
                 android:textColor="#333333" />
 
@@ -151,6 +152,7 @@
                 android:background="@drawable/longbtn_selector"
                 android:clickable="true"
                 android:gravity="center"
+                android:visibility="gone"
                 android:text="@string/accoutlogin"
                 android:textColor="#333333" />
 
@@ -162,6 +164,7 @@
                 android:background="@drawable/longbtn_selector"
                 android:clickable="true"
                 android:gravity="center"
+                android:visibility="gone"
                 android:text="@string/regedit"
                 android:textColor="#333333" />
         </LinearLayout>
