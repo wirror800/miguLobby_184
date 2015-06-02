@@ -1099,7 +1099,7 @@ public class FiexedViewHelper extends GlobalFiexParamer {
 		// 2.普通账号登陆成功后判断muid是否为0，如果是0，发起后台绑定并退出，否则直接退出
 		UserInfo userInfo = HallDataManager.getInstance().getUserMe();
 		stopSystemPopDialog();
-		if (userInfo != null) {
+		/*if (userInfo != null) {
 			if (userInfo.loginType == AccountItem.ACC_TYPE_TEMP
 					&& !LoginInfoManager.getInstance().isBind()) {
 				skipToFragment(NODIFY_ACCOUNT_VIEW);
@@ -1108,7 +1108,8 @@ public class FiexedViewHelper extends GlobalFiexParamer {
 			}
 		} else {
 			GameUtilJni.exitApplication();
-		}
+		}*/
+		GameUtilJni.exitApplication();
 	}
 
 	private static SavedMessage savedMsg;
