@@ -91,13 +91,14 @@ public class ThirdLoginStart {
 					String token = getTagStr(xmlStr, "token");
 
 					Configs.setStringSharedPreferences(mContext, token_key, token);
-					AccountItem item = new AccountItem(null, null, token,
+					
+					/*AccountItem item = new AccountItem(null, null, token,
 							AccountItem.ACC_TYPE_THIRD, 0, null, null);
 					
 					LoginInfoManager.getInstance().updateAccInfo(item);
 					LoginInfoManager.getInstance().setCurAccountItem(item);
-					AccountManager.getInstance().quickEntrance(mLoginCallBack);
-
+					AccountManager.getInstance().quickEntrance(mLoginCallBack);*/
+					AccountManager.getInstance().thirdQuickEntrance(mLoginCallBack,token);
 				} else {
 					String errMsg = getTagStr(xmlStr, "msg");
 					Log.e(TAG, errMsg);

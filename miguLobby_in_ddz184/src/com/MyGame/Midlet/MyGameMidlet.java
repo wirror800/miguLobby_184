@@ -311,7 +311,7 @@ public class MyGameMidlet extends Activity implements OnClickListener {
 				ThirdLoginStart.token_key, "");
 		if (Configs.isEmptyStr(token)) {
 			ThirdLoginStart.getInstance(mContext).init(mLoginCallBack);
-			ThirdLoginStart.getInstance(mContext).getTokenUrl("13538202843");
+			ThirdLoginStart.getInstance(mContext).getTokenUrl("01979015");
 		}*/
 		//fot test end
 	}
