@@ -55,6 +55,7 @@
                 android:id="@+id/accout_line"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:layout_below="@+id/rel_id"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/divider"
@@ -64,6 +65,7 @@
                 android:id="@+id/rel_accout"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:visibility="gone"
                 android:layout_alignLeft="@+id/rel_id"
                 android:layout_below="@+id/accout_line"
                 android:layout_centerHorizontal="true" >
