@@ -15,9 +15,11 @@ import com.login.utils.UtilDrawableStateList;
 import com.login.view.AccountManager;
 import com.login.view.LoginView;
 import com.login.view.LoginViewCallBack;
+import com.mingyou.login.LoginSocket;
 import com.mykj.game.FiexedViewHelper;
 import com.MyGame.Midlet.R;
 import com.mykj.game.utils.AppConfig;
+import com.mykj.game.utils.ChannelDataMgr;
 import com.mykj.game.utils.Util;
 
 public class LoginViewFragment extends FragmentModel{
@@ -109,7 +111,16 @@ public class LoginViewFragment extends FragmentModel{
 	 * 快速登录接口
 	 */
 	public void quickLogin(){
-		AccountManager.getInstance().quickEntrance(mLoginCallBack);
+		String token =ChannelDataMgr.getInstance().getCmccToken();
+	
+		if(Util.isEmptyStr(token)){
+			AccountManager.getInstance().quickEntrance(mLoginCallBack);
+		}else{
+			LoginSocket.getInstance().closeNet();
+			AccountManager.getInstance().thirdQuickEntrance(mLoginCallBack,token);
+		}
+		
+	
 	}
 
 

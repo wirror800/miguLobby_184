@@ -11,6 +11,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Environment;
 
+import com.mingyou.accountInfo.AccountItem;
 import com.mingyou.accountInfo.LoginInfoManager;
 
 /**
@@ -71,7 +72,6 @@ public class ChannelDataMgr {
 		String channelId = null; //临时记录主渠道
 		String childChannelId = null;//临时记录子渠道
 		String token=null; //临时移动token
-		String netType=null; //临时网络类型 移动传入
 		String channelFiledName ="channel.cfg"; //记录渠道数据的文件名
 
 		File channelFile = new File(act.getFilesDir(),channelFiledName);
@@ -79,8 +79,7 @@ public class ChannelDataMgr {
 		// 获取大厅传递的数据,获取Bundle的信息
 		Bundle bundle = act.getIntent().getExtras();
 		if(null != bundle){
-			token = bundle.getString("GH_USER_INFO");
-			netType = bundle.getString("GH_NETWORK_TYPE");
+			token = bundle.getString("TOKEN");
 			channelId = bundle.getString("CHANNEL_ID");//读取传入的主渠道
 			childChannelId = bundle.getString("CHILD_CHANNEL_ID");//读取传入的子渠道
 			//记录登录方式
@@ -88,23 +87,11 @@ public class ChannelDataMgr {
 				//记录为由大厅启动的游戏
 				AppConfig.setLaunchType(AppConfig.HALL_TAG);
 			}
+			setCmccToken(token);
 		}
 		
-		if(!Util.isEmptyStr(token) && !Util.isEmptyStr(netType)){   //移动大厅登录
-			LoginInfoManager.getInstance().setMobileGameHallToken(token);
-			AppConfig.setLaunchType(AppConfig.MOBILE_TAG);
-			//从本地初始化渠道号
-			try {
-				Properties pro = new Properties();
-				InputStream is = act.getAssets().open("channel.properties");
-				pro.load(is);
-				AppConfig.channelId = pro.getProperty("channelId");
-				AppConfig.childChannelId = pro.getProperty("childChannelId");
-				is.close();
-			} catch (Exception e) {
-				Log.e(TAG, "channelId read error");
-			}
-		}else if(Util.isEmptyStr(AppConfig.channelId) && !Util.isEmptyStr(channelId) && !Util.isEmptyStr(childChannelId)){  //大厅传入
+	
+		if(Util.isEmptyStr(AppConfig.channelId) && !Util.isEmptyStr(channelId) && !Util.isEmptyStr(childChannelId)){  //大厅传入
 			AppConfig.channelId=channelId;
 			AppConfig.childChannelId=childChannelId;
 			//writeChannelToFile(channelFile, channelId, childChannelId);
@@ -196,7 +183,16 @@ public class ChannelDataMgr {
 	}
 	
 	
+	private  String cmccToken=null;
 	
+	public  String getCmccToken() {
+		return cmccToken;
+	}
+
+	public  void setCmccToken(String token) {
+		cmccToken = token;
+	}
+
 	
 	
 	
