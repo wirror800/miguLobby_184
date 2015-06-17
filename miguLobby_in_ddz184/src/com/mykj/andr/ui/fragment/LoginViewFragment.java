@@ -79,9 +79,9 @@ public class LoginViewFragment extends FragmentModel{
 		v.setBackgroundRes(R.drawable.new_bg);
 
 		if(AppConfig.all_in_lobby){
-			v.setImgZYLogo(R.drawable.zhiyuntoplogo);
+			v.setImgZYLogo(R.drawable.zhiyun_logo);
 			v.setImgProgressRes(R.drawable.loading01);
-			v.setImgButtomZYLogo(R.drawable.zhiyunbottomlogo);
+			v.setImgButtomZYLogo(R.drawable.migu_logo);
 			
 			v.setImgLogo(R.drawable.common_chinamobilechess);
 		}else{

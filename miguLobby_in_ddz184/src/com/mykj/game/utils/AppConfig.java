@@ -39,7 +39,7 @@ public class AppConfig extends debug.IP_CONFIG_FILE {
 	/** 调试开关 */
 	public static boolean debug = false;   //支持配置文件
 	
-	public static boolean all_in_lobby=false;  //是否发布移动版本，表现为loading 界面风给为移动要求风格
+	public static boolean all_in_lobby=true;  //是否发布移动版本，表现为loading 界面风给为移动要求风格
 	
 	public static String pay_version = "6.2"; //支付组件版本号
 	/**
