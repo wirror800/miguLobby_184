@@ -16,7 +16,7 @@ import com.login.view.LoginViewCallBack;
 import com.login.view.LogonView;
 import com.mykj.andr.ui.ServerDialog;
 import com.mykj.game.FiexedViewHelper;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.Util;
 

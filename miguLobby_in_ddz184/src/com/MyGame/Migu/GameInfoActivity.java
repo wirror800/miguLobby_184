@@ -1,4 +1,4 @@
-package com.MyGame.Midlet;
+package com.MyGame.Migu;
 
 
 import java.math.BigDecimal;
@@ -31,6 +31,7 @@ import com.MyGame.Midlet.service.MykjService.DownloadThread;
 import com.MyGame.Midlet.service.MykjService.MykjServiceBinder;
 import com.MyGame.Midlet.util.AppConfig;
 import com.MyGame.Midlet.util.Configs;
+import com.MyGame.Migu.R;
 
 
 public class GameInfoActivity extends Activity{

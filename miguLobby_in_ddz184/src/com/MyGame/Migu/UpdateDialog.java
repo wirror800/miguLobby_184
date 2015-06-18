@@ -1,4 +1,4 @@
-package com.MyGame.Midlet;
+package com.MyGame.Migu;
 
 
 import android.app.Dialog;
@@ -6,6 +6,7 @@ import android.content.Context;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
+import com.MyGame.Migu.R;
 
 
 public class UpdateDialog extends Dialog{

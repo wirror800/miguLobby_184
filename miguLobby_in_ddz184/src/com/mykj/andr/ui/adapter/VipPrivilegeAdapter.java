@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.mykj.andr.model.VipPrivilege;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 
 /**
  * 

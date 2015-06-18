@@ -1,4 +1,4 @@
-package com.MyGame.Midlet;
+package com.MyGame.Migu;
 
 import com.MyGame.Midlet.util.AppConfig;
 import android.app.Activity;
@@ -19,6 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.MyGame.Midlet.service.MykjService.MykjServiceBinder;
+import com.MyGame.Migu.R;
 
 public class SettingActivity extends Activity {
 	private static final String TAG = "SettingActivity";

@@ -12,7 +12,7 @@ import android.util.AttributeSet;
 import android.view.Gravity;
 import android.widget.Button;
 
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 
 public class BorderButton extends Button {
 	protected Paint paint;

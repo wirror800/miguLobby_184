@@ -1,4 +1,4 @@
-package com.MyGame.Midlet;
+package com.MyGame.Migu;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -26,6 +26,7 @@ import android.widget.Toast;
 
 import com.MyGame.Midlet.util.AppConfig;
 import com.MyGame.Midlet.util.Configs;
+import com.MyGame.Migu.R;
 import com.mingyou.community.Community;
 
 public class PersonalActivity extends Activity implements OnClickListener,

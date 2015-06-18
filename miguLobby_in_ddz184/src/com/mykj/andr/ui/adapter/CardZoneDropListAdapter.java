@@ -10,7 +10,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.mykj.andr.model.NewUIDataStruct;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 
 /**
  * @author wanghj

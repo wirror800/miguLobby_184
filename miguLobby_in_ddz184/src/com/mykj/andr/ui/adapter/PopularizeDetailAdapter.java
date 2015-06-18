@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.mykj.andr.model.PopularizeDetailList.PopularizeDetail;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 
 public class PopularizeDetailAdapter extends ArrayListAdapter<PopularizeDetail> {
 

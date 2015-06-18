@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.utils.Util;
 import com.mykj.game.utils.UtilHelper;
 

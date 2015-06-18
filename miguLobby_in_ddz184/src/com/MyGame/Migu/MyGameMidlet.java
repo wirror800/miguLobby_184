@@ -1,4 +1,4 @@
-package com.MyGame.Midlet;
+package com.MyGame.Migu;
 
 import java.util.List;
 
@@ -54,7 +54,6 @@ import cn.cmgame.billing.api.BillingResult;
 import cn.cmgame.billing.api.GameInterface;
 import cn.cmgame.billing.api.LoginResult;
 
-import com.MyGame.Midlet.GirdViewGameAdapter.ViewHolder;
 import com.MyGame.Midlet.service.AdvItem;
 import com.MyGame.Midlet.service.AppVersion;
 import com.MyGame.Midlet.service.GamePlayerUtil;
@@ -65,6 +64,8 @@ import com.MyGame.Midlet.service.MykjService.MykjServiceBinder;
 import com.MyGame.Midlet.util.AppConfig;
 import com.MyGame.Midlet.util.Configs;
 import com.MyGame.Midlet.util.Util;
+import com.MyGame.Migu.R;
+import com.MyGame.Migu.GirdViewGameAdapter.ViewHolder;
 import com.login.utils.DensityConst;
 import com.login.utils.UtilDrawableStateList;
 import com.login.view.AccountManager;

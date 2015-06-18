@@ -1,7 +1,7 @@
 package com.mykj.andr.task;
 
 import com.mykj.comm.io.TDataInputStream;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.Log;
 

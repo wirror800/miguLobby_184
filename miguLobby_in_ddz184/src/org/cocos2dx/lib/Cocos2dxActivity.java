@@ -49,7 +49,7 @@ import android.view.WindowManager;
 
 import com.mykj.andr.ui.MMVideoBuyDialog;
 import com.mykj.game.FiexedViewHelper;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.MyGame.Midlet.wxapi.WXEntryActivity;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.HalfWebDialog;

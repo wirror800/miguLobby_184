@@ -9,7 +9,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 
 /*****

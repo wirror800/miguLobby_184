@@ -49,8 +49,8 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.WindowManager.LayoutParams;
 
-import com.MyGame.Midlet.MyGameMidlet;
 import com.MyGame.Midlet.util.AppConfig;
+import com.MyGame.Migu.MyGameMidlet;
 import com.mingyou.community.Community;
 import com.mingyou.community.MUserInfo;
 import com.mykj.comm.log.MLog;

@@ -59,7 +59,7 @@ import com.mykj.andr.ui.widget.CardZoneDataListener;
 import com.mykj.andr.ui.widget.LoginAssociatedWidget;
 import com.mykj.andr.ui.widget.Interface.InvokeViewCallBack;
 import com.mykj.comm.io.TDataOutputStream;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.CrossGeneralizeHelper;
 import com.mykj.game.utils.Log;

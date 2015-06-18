@@ -8,7 +8,7 @@ import android.util.Log;
 
 import com.alipay.android.app.sdk.AliPay;
 import com.mykj.andr.pay.PayManager;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.utils.Toast;
 import com.mykj.game.utils.Util;
 

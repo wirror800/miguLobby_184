@@ -1,4 +1,4 @@
-package com.MyGame.Midlet;
+package com.MyGame.Migu;
 
 import java.util.List;
 
@@ -10,6 +10,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
 import com.MyGame.Midlet.service.GameInfoItem;
+import com.MyGame.Migu.R;
 
 public class GameInfoAdapter extends BaseAdapter{
 	private List<GameInfoItem> mImgList;       //图片bitmap   

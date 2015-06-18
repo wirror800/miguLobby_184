@@ -10,7 +10,7 @@ import android.content.Context;
 
 import com.mykj.andr.model.City;
 import com.mykj.andr.model.Province;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 
 public class ProvinceConfig {
 	public static List<Province> provinces;

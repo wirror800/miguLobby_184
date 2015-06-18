@@ -16,8 +16,8 @@ import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.TextView;
 
-import com.MyGame.Midlet.MyGameMidlet;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.MyGameMidlet;
+import com.MyGame.Migu.R;
 import com.MyGame.Midlet.util.AppConfig;
 
 

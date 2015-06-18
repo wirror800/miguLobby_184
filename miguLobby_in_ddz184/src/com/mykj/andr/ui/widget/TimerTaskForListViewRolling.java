@@ -19,7 +19,7 @@ import android.widget.TextView;
 import com.mykj.andr.logingift.LotteryDrowHelper;
 import com.mykj.andr.logingift.LotteryDrowMainView;
 import com.mykj.andr.model.LotteryDrowWinner;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 
 /**
  * 带有自动滑动的计时器，listview，数据只包含兩列String字符串(适用于抽奖机获奖名单列表)

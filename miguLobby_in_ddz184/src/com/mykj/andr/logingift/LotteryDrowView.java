@@ -23,7 +23,7 @@ import android.view.View;
 import com.mykj.andr.model.LotteryDrowPrize;
 import com.mykj.andr.provider.LotteryDrowProvider;
 import com.mykj.andr.ui.CustomActivity;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.utils.AppConfig;
 
 /**

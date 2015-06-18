@@ -9,7 +9,7 @@ import android.view.View.OnClickListener;
 import com.mingyou.login.RecoverForDisconnect;
 import com.mingyou.login.SocketLoginListener;
 import com.mykj.comm.log.MLog;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.utils.Log;
 import com.mykj.game.utils.UtilHelper;
 

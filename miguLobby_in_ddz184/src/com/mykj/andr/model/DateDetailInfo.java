@@ -10,7 +10,7 @@ import android.content.res.Resources;
 
 import com.mykj.comm.io.TDataInputStream;
 import com.mykj.comm.io.TDataInputStream.MDataMark;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.utils.UtilHelper;
 
 public class DateDetailInfo {

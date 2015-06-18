@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.MyGame.Midlet"
+    package="com.MyGame.Migu"
     android:versionCode="20"
     android:versionName="4.0.0" >
 
     <uses-sdk
         android:minSdkVersion="9"
-        android:targetSdkVersion="15" />
+        android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -26,7 +26,7 @@
     <!-- 移动SDK 添加权限 -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
- <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -54,24 +54,25 @@
     <uses-permission android:name="android.permission.READ_LOGS" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="org.agoo.android.permission.MESSAGE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于评论模块分享位置信息 -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 用于评论模块分享位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+ <!-- 用于评论模块分享位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+ <!-- 用于评论模块分享位置信息 -->
     <uses-permission android:name="android.permission.REORDER_TASKS" />
 
     <permission android:name="org.agoo.android.permission.MESSAGE" />
-    
-     <!-- 斯凯权限 -->
+
+    <!-- 斯凯权限 -->
     <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.WRITE_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
-	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
-	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-	
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 
     <application
-        android:name=".CmgameApplication"
+        android:name="com.MyGame.Migu.CmgameApplication"
         android:allowBackup="true"
         android:icon="@drawable/app_launcher"
         android:label="@string/app_name"
@@ -92,49 +93,49 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MyGameMidlet"
+            android:name="com.MyGame.Migu.MyGameMidlet"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTop"
             android:screenOrientation="landscape"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name=".SettingActivity"
+            android:name="com.MyGame.Migu.SettingActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name=".GameInfoActivity"
+            android:name="com.MyGame.Migu.GameInfoActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name=".HelpActivity"
+            android:name="com.MyGame.Migu.HelpActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name=".PersonalActivity"
+            android:name="com.MyGame.Migu.PersonalActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name=".FeedbackInfoActivity"
+            android:name="com.MyGame.Migu.FeedbackInfoActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name=".RegeditActivity"
+            android:name="com.MyGame.Migu.RegeditActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name=".service.PopUpActivity"
+            android:name="com.MyGame.Midlet.service.PopUpActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Notifiy" >
         </activity>
 
-        <receiver android:name=".service.MykjReceiver" >
+        <receiver android:name="com.MyGame.Midlet.service.MykjReceiver" >
             <intent-filter>
 
                 <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
@@ -145,7 +146,7 @@
         </receiver>
 
         <service
-            android:name=".service.MykjService"
+            android:name="com.MyGame.Midlet.service.MykjService"
             android:enabled="true"
             android:exported="false" >
             <intent-filter>
@@ -156,23 +157,21 @@
         </service>
 
         <provider
-            android:name="GameContentProvider"
+            android:name="com.MyGame.Migu.GameContentProvider"
             android:authorities="com.mingyou.gameLobby"
             android:exported="true" />
- 		
- 		<activity
-            android:name=".DDZ"
+
+        <activity
+            android:name="com.MyGame.Migu.DDZ"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" >
-
         </activity>
-         <activity
-            android:name=".DDZ_Local_Activity"
+        <activity
+            android:name="com.MyGame.Migu.DDZ_Local_Activity"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" >
-
         </activity>
         <activity
             android:name="com.mykj.andr.ui.MessageBoxActivity"
@@ -245,7 +244,7 @@
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name=".wxapi.WXEntryActivity"
+            android:name="com.MyGame.Midlet.wxapi.WXEntryActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.Translucent" >
@@ -282,9 +281,13 @@
         </meta-data>
 
         <!-- 联通支付相关配置 -->
-        <meta-data android:name="wostore_billing_otherpay" android:value="false"/>
-		<meta-data android:name="wostore_billing_chinaunicom" android:value="true"/>
-		
+        <meta-data
+            android:name="wostore_billing_otherpay"
+            android:value="false" />
+        <meta-data
+            android:name="wostore_billing_chinaunicom"
+            android:value="true" />
+
         <!-- 电信爱游戏 -->
         <activity
             android:name="cn.egame.terminal.paysdk.EgamePayActivity"
@@ -355,13 +358,11 @@
             android:value="57aa80abb81a53abe8d69869aa88f887" >
         </meta-data>
 
-        
-		<!-- 支付宝 -->
+        <!-- 支付宝 -->
         <activity
             android:name="com.alipay.android.app.sdk.WapPayActivity"
             android:screenOrientation="portrait" >
         </activity>
-        
     </application>
 
 </manifest>

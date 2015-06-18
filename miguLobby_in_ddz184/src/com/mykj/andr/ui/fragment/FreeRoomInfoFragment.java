@@ -14,7 +14,7 @@ import com.mykj.andr.model.HallDataManager;
 import com.mykj.andr.ui.fragment.LoadingFragment.NodeDataType;
 import com.mykj.andr.ui.widget.CardZoneProtocolListener;
 import com.mykj.game.FiexedViewHelper;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 
 public class FreeRoomInfoFragment extends FragmentModel{
 	public static final String TAG="FreeRoomInfoFragment";

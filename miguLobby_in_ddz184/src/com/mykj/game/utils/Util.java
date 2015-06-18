@@ -62,7 +62,7 @@ import android.util.Xml;
 import android.view.Display;
 import android.view.WindowManager;
 
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 
 public class Util {
 	private static final String TAG = "Util";

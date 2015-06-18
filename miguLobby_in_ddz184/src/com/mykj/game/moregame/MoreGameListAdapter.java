@@ -17,7 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 import com.mykj.game.moregame.MoreGameManager.DownloadThread;
 import com.mykj.game.utils.AppConfig;

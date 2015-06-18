@@ -7,7 +7,7 @@ import android.text.style.ForegroundColorSpan;
 import android.util.Log;
 
 import com.mykj.andr.pay.PayManager;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.utils.Toast;
 import com.mykj.game.utils.Util;
 import com.mykj.game.utils.UtilHelper;

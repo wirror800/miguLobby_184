@@ -8,7 +8,7 @@ import android.content.Context;
 
 import com.mykj.andr.ui.widget.CardZoneDataListener;
 import com.mykj.comm.io.TDataInputStream;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.utils.Util;
 
 

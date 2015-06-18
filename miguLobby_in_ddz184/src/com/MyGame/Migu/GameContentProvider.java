@@ -1,4 +1,4 @@
-package com.MyGame.Midlet;
+package com.MyGame.Migu;
 
 import android.app.Activity;
 import android.content.ContentProvider;

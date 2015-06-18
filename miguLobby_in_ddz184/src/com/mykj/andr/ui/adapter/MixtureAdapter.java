@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 import com.login.utils.DensityConst;
 import com.mykj.andr.model.MixtureInfo;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.ImageAsyncTaskDownload;
 import com.mykj.game.utils.Util;

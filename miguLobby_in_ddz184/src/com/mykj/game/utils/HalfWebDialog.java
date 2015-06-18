@@ -8,7 +8,7 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 
 public class HalfWebDialog extends AlertDialog implements View.OnClickListener{
 

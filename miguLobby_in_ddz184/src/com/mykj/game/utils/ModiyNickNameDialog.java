@@ -16,7 +16,7 @@ import com.mykj.andr.net.NetSocketManager;
 import com.mykj.andr.ui.fragment.Cocos2dxFragment;
 import com.mykj.comm.io.TDataInputStream;
 import com.mykj.comm.io.TDataOutputStream;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 import com.mykj.game.ddz.api.UC;
 

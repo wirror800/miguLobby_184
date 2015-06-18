@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import com.mykj.andr.model.GoodsItem;
 import com.mykj.andr.pay.PayManager;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 import com.mykj.game.ddz.api.UC;
 

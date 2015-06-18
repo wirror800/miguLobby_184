@@ -39,7 +39,7 @@ import com.mykj.andr.model.LotteryConfigInfo;
 import com.mykj.andr.model.LotteryDrowPrize;
 import com.mykj.andr.model.LotteryDrowWinner;
 import com.mykj.andr.provider.LotteryDrowProvider;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.Util;
 

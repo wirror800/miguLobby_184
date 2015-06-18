@@ -31,7 +31,7 @@ import com.mykj.andr.provider.ActionInfoProvider;
 import com.mykj.andr.ui.GetTicketActivity;
 import com.mykj.andr.ui.UserCenterActivity;
 import com.mykj.game.FiexedViewHelper;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 import com.mykj.game.ddz.api.UC;
 import com.mykj.game.utils.AppConfig;

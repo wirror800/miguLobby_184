@@ -101,7 +101,7 @@ import com.mykj.andr.ui.widget.Interface.OnArticleSelectedListener;
 import com.mykj.comm.io.TDataInputStream;
 import com.mykj.comm.io.TDataOutputStream;
 import com.mykj.game.FiexedViewHelper;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 import com.mykj.game.ddz.api.UC;
 import com.mykj.game.moregame.MoregameActivity;

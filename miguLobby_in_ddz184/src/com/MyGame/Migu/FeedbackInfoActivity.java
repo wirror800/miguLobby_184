@@ -1,4 +1,4 @@
-package com.MyGame.Midlet;
+package com.MyGame.Migu;
 
 import java.net.URLEncoder;
 
@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.MyGame.Midlet.util.AppConfig;
 import com.MyGame.Midlet.util.Configs;
+import com.MyGame.Migu.R;
 import com.mingyou.accountInfo.LoginInfoManager;
 import com.mingyou.community.Community;
 

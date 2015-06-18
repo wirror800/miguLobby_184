@@ -45,7 +45,7 @@ import com.mykj.comm.io.TDataInputStream;
 import com.mykj.comm.io.TDataOutputStream;
 import com.mykj.comm.log.MLog;
 import com.mykj.game.FiexedViewHelper;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.CenterUrlHelper;
 import com.mykj.game.utils.CommonBeanHelper;

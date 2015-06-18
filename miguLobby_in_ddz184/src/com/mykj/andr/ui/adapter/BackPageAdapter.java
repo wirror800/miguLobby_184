@@ -20,7 +20,7 @@ import android.widget.TextView;
 
 import com.login.utils.DensityConst;
 import com.mykj.andr.model.BackPackItem;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.ImageAsyncTaskDownload;
 import com.mykj.game.utils.Util;

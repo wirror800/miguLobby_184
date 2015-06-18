@@ -30,7 +30,7 @@ import com.mykj.andr.pay.PayManager;
 import com.mykj.comm.io.TDataInputStream;
 import com.mykj.comm.io.TDataInputStream.MDataMark;
 import com.mykj.comm.io.TDataOutputStream;
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.Log;
 import com.mykj.game.utils.Toast;

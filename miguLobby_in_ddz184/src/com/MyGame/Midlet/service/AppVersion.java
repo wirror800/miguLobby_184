@@ -23,7 +23,7 @@ import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
 
-import com.MyGame.Midlet.R;
+import com.MyGame.Migu.R;
 import com.MyGame.Midlet.util.AppConfig;
 import com.MyGame.Midlet.util.Configs;
 import com.login.view.LoginView;
