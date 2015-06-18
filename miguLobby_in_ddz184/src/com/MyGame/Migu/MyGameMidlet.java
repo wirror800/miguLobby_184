@@ -1559,6 +1559,12 @@ public class MyGameMidlet extends Activity implements OnClickListener {
 
 		}
 
+		@Override
+		public void downloadSucess(String path) {
+			// TODO Auto-generated method stub
+			Configs.installApk(mContext, path);
+		}
+
 	};
 
 	private static final String MIGU_KEY = "MIGU_KEY";

@@ -2076,6 +2076,11 @@ public class CardZoneFragment extends FragmentModel implements OnClickListener {
 				cardZoneHandler.sendMessage(msg);*/
 				AppConfig.getVersionInfo().setDownLoading(false);
 			}
+			
+			@Override
+			public void downloadSucess(String path) {
+				
+			}
 		};
 		return lis;
 	}
@@ -2102,6 +2107,10 @@ public class CardZoneFragment extends FragmentModel implements OnClickListener {
 				msg.obj = err;
 				cardZoneHandler.sendMessage(msg);
 				AppConfig.getVersionInfo().setDownLoading(false);
+			}
+			@Override
+			public void downloadSucess(String path) {
+				
 			}
 		};
 		return lis;
@@ -2131,6 +2140,10 @@ public class CardZoneFragment extends FragmentModel implements OnClickListener {
 				msg.obj = err;
 				cardZoneHandler.sendMessage(msg);
 				AppConfig.getVersionInfo().setDownLoading(false);
+			}
+			@Override
+			public void downloadSucess(String path) {
+				
 			}
 		};
 		return lis;
