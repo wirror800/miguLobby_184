@@ -27,7 +27,7 @@ import com.mykj.andr.pay.PayManager;
 import com.mykj.andr.provider.GoodsItemProvider;
 import com.mykj.andr.ui.adapter.MarketAdapter;
 import com.mykj.game.MainApplication;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.CenterUrlHelper;

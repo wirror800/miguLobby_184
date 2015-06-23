@@ -17,7 +17,7 @@ import com.login.view.LoginView;
 import com.login.view.LoginViewCallBack;
 import com.mingyou.login.LoginSocket;
 import com.mykj.game.FiexedViewHelper;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.ChannelDataMgr;
 import com.mykj.game.utils.Util;

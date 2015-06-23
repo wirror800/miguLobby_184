@@ -19,7 +19,7 @@ import android.widget.TextView;
 import com.mingyou.login.struc.NotifiyDownLoad;
 import com.mingyou.login.struc.VersionInfo;
 import com.mingyou.login.struc.VersionInfo.GifModel;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.utils.ImageManager;
 import com.mykj.game.utils.Util;
 

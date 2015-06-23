@@ -64,7 +64,7 @@ import com.mykj.comm.io.TDataOutputStream;
 import com.mykj.comm.log.MLog;
 import com.mykj.game.FiexedViewHelper;
 import com.mykj.game.MainApplication;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.MyGame.Midlet.wxapi.WXUtil;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 import com.mykj.game.ddz.api.PushManager;

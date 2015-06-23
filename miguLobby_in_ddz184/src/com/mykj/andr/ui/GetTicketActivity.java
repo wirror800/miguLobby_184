@@ -36,7 +36,7 @@ import com.mykj.andr.ui.widget.SysPopDialog;
 import com.mykj.comm.io.TDataInputStream;
 import com.mykj.comm.io.TDataOutputStream;
 import com.mykj.game.FiexedViewHelper;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.MyGame.Midlet.wxapi.WXEntryActivity;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 import com.mykj.game.utils.AppConfig;

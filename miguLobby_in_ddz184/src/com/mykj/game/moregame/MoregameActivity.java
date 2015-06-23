@@ -18,7 +18,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.mykj.andr.ui.widget.SysPopDialog;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.moregame.MoreGameManager.DownloadThread;
 import com.mykj.game.utils.Log;
 import com.mykj.game.utils.Toast;

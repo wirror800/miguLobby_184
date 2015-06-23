@@ -1,4 +1,4 @@
-package com.MyGame.Migu;
+package com.MyGame.Midlet;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.MyGame.Midlet.service.AppVersion;
 import com.MyGame.Midlet.service.MykjService.DownloadThread;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 
 
 public class GirdViewGameAdapter extends BaseAdapter

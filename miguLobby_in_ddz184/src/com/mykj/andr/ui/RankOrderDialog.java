@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.mykj.andr.model.HallDataManager;
 import com.mykj.andr.model.RankOrderInfo;
 import com.mykj.andr.ui.adapter.RankOrderAdapter;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.utils.AppConfig;
 
 public class RankOrderDialog extends AlertDialog  implements View.OnClickListener{

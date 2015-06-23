@@ -17,7 +17,7 @@ import android.widget.Toast;
 import com.mykj.andr.model.NodeData;
 import com.mykj.andr.ui.widget.Interface.CardZoneOnClickListener;
 import com.mykj.game.FiexedViewHelper;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.utils.UtilHelper;
 
 public class NewCardZoneGridViewAdapter extends BaseAdapter{

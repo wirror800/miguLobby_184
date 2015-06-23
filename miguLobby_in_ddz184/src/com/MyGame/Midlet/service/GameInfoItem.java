@@ -9,7 +9,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.DisplayMetrics;
 
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.MyGame.Midlet.util.Configs;
 
 public class GameInfoItem {

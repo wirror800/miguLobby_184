@@ -1,4 +1,4 @@
-package com.MyGame.Migu;
+package com.MyGame.Midlet;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -21,7 +21,7 @@ import com.MyGame.Midlet.service.HelpInfo;
 import com.MyGame.Midlet.service.MykjService.MykjServiceBinder;
 import com.MyGame.Midlet.util.AppConfig;
 import com.MyGame.Midlet.util.Configs;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 
 public class HelpActivity extends Activity {
 	private static final String TAG="HelpActivity";

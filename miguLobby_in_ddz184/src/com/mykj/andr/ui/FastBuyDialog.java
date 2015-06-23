@@ -21,7 +21,7 @@ import com.login.utils.DensityConst;
 import com.mykj.andr.model.GoodsItem;
 import com.mykj.andr.model.HallDataManager;
 import com.mykj.andr.model.UserInfo;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.Util;

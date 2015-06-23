@@ -16,7 +16,7 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import com.mykj.andr.model.DateDetailInfo;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.utils.AppConfig;
 
 public class DetailDateDialog extends Dialog implements android.view.View.OnClickListener {

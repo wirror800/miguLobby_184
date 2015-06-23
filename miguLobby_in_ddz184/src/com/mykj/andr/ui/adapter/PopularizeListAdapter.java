@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.mykj.andr.model.PopularizeFriendList.PopularizeFriend;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 
 public class PopularizeListAdapter extends ArrayListAdapter<PopularizeFriend> {
 

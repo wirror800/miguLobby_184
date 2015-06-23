@@ -23,7 +23,7 @@ import android.widget.TextView;
 import com.mykj.andr.model.GoodsItem;
 import com.mykj.andr.pay.PayManager;
 import com.mykj.andr.provider.GoodsItemProvider;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 import com.mykj.game.ddz.api.UC;
 import com.mykj.game.utils.Util;

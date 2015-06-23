@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.mykj.andr.model.HallDataManager;
 import com.mykj.andr.model.UserInfo;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 import com.mykj.game.ddz.api.UC;
 import com.mykj.game.utils.Util;

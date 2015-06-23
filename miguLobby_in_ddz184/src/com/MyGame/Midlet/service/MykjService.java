@@ -43,8 +43,8 @@ import android.text.format.Time;
 import android.util.Log;
 import android.widget.RemoteViews;
 
-import com.MyGame.Migu.MyGameMidlet;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.MyGameMidlet;
+import com.MyGame.Midlet.R;
 import com.MyGame.Midlet.util.AppConfig;
 import com.MyGame.Midlet.util.Configs;
 import com.login.view.AccountManager;

@@ -30,7 +30,7 @@ import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.Log;
 import com.mykj.game.utils.Toast;

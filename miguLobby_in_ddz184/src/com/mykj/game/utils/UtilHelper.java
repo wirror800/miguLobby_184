@@ -72,7 +72,7 @@ import com.mykj.andr.ui.widget.CrossExitDialog;
 import com.mykj.andr.ui.widget.ExitDialog;
 import com.mykj.andr.ui.widget.PayListDialog;
 import com.mykj.game.FiexedViewHelper;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 
 /*******

@@ -12,7 +12,7 @@ import android.view.LayoutInflater;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.MyGame.Midlet.util.Configs;
 
 

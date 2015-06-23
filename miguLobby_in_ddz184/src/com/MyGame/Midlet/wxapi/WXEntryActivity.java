@@ -16,7 +16,7 @@ import android.view.View.OnClickListener;
 import com.mykj.andr.model.HallDataManager;
 import com.mykj.game.GlobalFiexParamer;
 import com.mykj.game.ddz.DDZ;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.Log;
 import com.mykj.game.utils.Toast;

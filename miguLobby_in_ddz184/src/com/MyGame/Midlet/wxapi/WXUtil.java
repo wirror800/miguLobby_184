@@ -40,7 +40,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.Log;
 import com.mykj.game.utils.Util;

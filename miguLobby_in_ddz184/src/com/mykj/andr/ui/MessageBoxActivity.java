@@ -34,7 +34,7 @@ import com.mykj.andr.ui.adapter.NoticePersonalAdapter;
 import com.mykj.andr.ui.adapter.NoticeSystemAdapter;
 import com.mykj.game.FiexedViewHelper;
 import com.mykj.game.MainApplication;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 import com.mykj.game.ddz.api.UC;
 import com.mykj.game.moregame.MoregameActivity;

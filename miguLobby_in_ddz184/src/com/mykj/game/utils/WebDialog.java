@@ -10,7 +10,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.AbsListView.LayoutParams;
 
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 
 public class WebDialog extends Dialog{
 

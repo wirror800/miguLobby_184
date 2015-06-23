@@ -14,7 +14,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.MyGame.Midlet.wxapi.WXEntryActivity;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 import com.mykj.game.ddz.api.UC;

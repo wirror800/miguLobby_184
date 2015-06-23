@@ -9,7 +9,7 @@ import android.util.Log;
 import com.mykj.andr.pay.PayManager;
 import com.mykj.andr.pay.mm.IAPHandler;
 import com.mykj.andr.pay.mm.IAPListener;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.utils.Toast;
 import com.mykj.game.utils.Util;
 import com.mykj.game.utils.UtilHelper;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.MyGame.Migu"
+    package="com.MyGame.Midlet"
     android:versionCode="20"
     android:versionName="4.0.0" >
 
@@ -72,7 +72,7 @@
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 
     <application
-        android:name="com.MyGame.Migu.CmgameApplication"
+        android:name=".CmgameApplication"
         android:allowBackup="true"
         android:icon="@drawable/app_launcher"
         android:label="@string/app_name"
@@ -93,39 +93,39 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.MyGame.Migu.MyGameMidlet"
+            android:name=".MyGameMidlet"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTop"
             android:screenOrientation="landscape"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.MyGame.Migu.SettingActivity"
+            android:name=".SettingActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="com.MyGame.Migu.GameInfoActivity"
+            android:name=".GameInfoActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="com.MyGame.Migu.HelpActivity"
+            android:name=".HelpActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="com.MyGame.Migu.PersonalActivity"
+            android:name=".PersonalActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="com.MyGame.Migu.FeedbackInfoActivity"
+            android:name=".FeedbackInfoActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="com.MyGame.Migu.RegeditActivity"
+            android:name=".RegeditActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="landscape" >
         </activity>
@@ -157,18 +157,18 @@
         </service>
 
         <provider
-            android:name="com.MyGame.Migu.GameContentProvider"
+            android:name=".GameContentProvider"
             android:authorities="com.mingyou.gameLobby"
             android:exported="true" />
 
         <activity
-            android:name="com.MyGame.Migu.DDZ"
+            android:name=".DDZ"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="com.MyGame.Migu.DDZ_Local_Activity"
+            android:name=".DDZ_Local_Activity"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" >

@@ -30,7 +30,7 @@ import com.mykj.andr.ui.fragment.LoadingFragment.NodeDataType;
 import com.mykj.comm.io.TDataInputStream;
 import com.mykj.comm.io.TDataOutputStream;
 import com.mykj.game.FiexedViewHelper;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.Log;
 import com.mykj.game.utils.Toast;

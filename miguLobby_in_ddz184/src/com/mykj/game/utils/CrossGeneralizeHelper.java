@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.mykj.game.FiexedViewHelper;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.moregame.MoregameActivity;
 
 /**

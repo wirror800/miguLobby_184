@@ -30,7 +30,7 @@ import com.mykj.andr.provider.ServerCenterProvider;
 import com.mykj.andr.ui.adapter.ServerCenterAdapter;
 import com.mykj.andr.ui.adapter.ServerCenterAdapter.ViewHolder;
 import com.mykj.game.FiexedViewHelper;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.FileAsyncTaskDownload;

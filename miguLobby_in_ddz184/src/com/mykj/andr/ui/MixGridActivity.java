@@ -21,7 +21,7 @@ import com.mykj.andr.model.MixtureInfo;
 import com.mykj.andr.provider.MixInfoProvider;
 import com.mykj.andr.ui.adapter.MixtureAdapter;
 import com.mykj.andr.ui.widget.CardZoneProtocolListener;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 import com.mykj.game.moregame.MoregameActivity;
 import com.mykj.game.utils.Log;

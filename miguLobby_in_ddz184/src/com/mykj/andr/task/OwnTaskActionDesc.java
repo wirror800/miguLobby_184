@@ -4,7 +4,7 @@ import android.content.res.Resources;
 
 import com.mykj.andr.task.GameTask.TASK_LABEL_TYPE;
 import com.mykj.comm.io.TDataInputStream;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.Log;
 

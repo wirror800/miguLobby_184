@@ -1,6 +1,6 @@
-package com.MyGame.Migu;
+package com.MyGame.Midlet;
 
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mingyou.login.LoginHttp;
 import com.mingyou.login.LoginHttp.HttpEvent;
 import com.mingyou.login.LoginHttp.HttpReceiveEventCallBack;

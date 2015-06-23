@@ -27,7 +27,7 @@ import com.mykj.andr.model.UserInfo;
 import com.mykj.andr.net.NetSocketManager;
 import com.mykj.comm.io.TDataInputStream;
 import com.mykj.comm.io.TDataOutputStream;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.ddz.api.AnalyticsUtils;
 import com.mykj.game.utils.AppConfig;
 import com.mykj.game.utils.Toast;

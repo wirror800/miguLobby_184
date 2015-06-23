@@ -3,7 +3,7 @@ package com.mykj.andr.task;
 import android.content.res.Resources;
 
 import com.mykj.comm.io.TDataInputStream;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.utils.AppConfig;
 /***
  * 

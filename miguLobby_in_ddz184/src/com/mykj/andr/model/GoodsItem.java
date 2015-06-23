@@ -7,7 +7,7 @@ import android.content.res.Resources;
 import com.mykj.andr.headsys.HeadInfo;
 import com.mykj.comm.io.TDataInputStream;
 import com.mykj.comm.io.TDataInputStream.MDataMark;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.utils.AppConfig;
 
 /**

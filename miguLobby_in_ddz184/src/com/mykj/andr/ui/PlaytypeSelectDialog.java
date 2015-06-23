@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 import com.mykj.andr.model.AllNodeData;
 import com.mykj.game.FiexedViewHelper;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 
 /**
  * @author Administrator

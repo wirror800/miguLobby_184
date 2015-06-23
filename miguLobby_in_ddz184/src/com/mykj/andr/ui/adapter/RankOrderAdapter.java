@@ -11,7 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.mykj.andr.model.RankOrderInfo;
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 
 
 /**

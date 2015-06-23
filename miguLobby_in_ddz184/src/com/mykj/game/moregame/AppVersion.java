@@ -15,7 +15,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Message;
 import android.util.DisplayMetrics;
 
-import com.MyGame.Migu.R;
+import com.MyGame.Midlet.R;
 import com.mykj.game.utils.Log;
 import com.mykj.game.utils.Util;
 
